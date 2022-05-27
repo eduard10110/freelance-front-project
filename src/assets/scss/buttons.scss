@@ -1,0 +1,21 @@
+.btn {
+  min-width: 4rem;
+  min-height: 2rem;
+  border: 1px solid $black;
+  cursor: pointer;
+}
+
+.btn-blue-default {
+  background-color: $light-blue;
+  color: $black;
+}
+
+.btn-blue-pressed:focus {
+  background-color: $dark-blue;
+  color: $black;
+}
+
+.btn-blue-hover:hover {
+  background-color: $blue;
+  color: $black;
+}
