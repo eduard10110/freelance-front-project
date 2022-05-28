@@ -2,20 +2,51 @@
   min-width: 4rem;
   min-height: 2rem;
   border: 1px solid $black;
+  color: $black;
   cursor: pointer;
 }
 
 .btn-blue-default {
   background-color: $light-blue;
-  color: $black;
 }
 
 .btn-blue-pressed:focus {
   background-color: $dark-blue;
-  color: $black;
 }
 
 .btn-blue-hover:hover {
   background-color: $blue;
-  color: $black;
+}
+
+.btn-disabled {
+  background-color: #cfcfcf;
+}
+
+.btn-orange-default {
+  background-color: $light-orange;
+}
+
+.btn-orange-hover:hover {
+  background-color: $dark-orange;
+}
+
+.btn-orange-pressed:focus {
+  background-color: $dark-brown;
+}
+
+.btn-default {
+  background-color: $wheat;
+}
+
+.btn-hover:hover {
+  background-color: #cfcfcf;
+}
+
+.btn-pressed:focus {
+  background-color: #979797;
+}
+
+.btn-active {
+  background-color: $black;
+  color: $white;
 }
