@@ -1,52 +1,22 @@
 .btn {
-  min-width: 4rem;
-  min-height: 2rem;
-  border: 1px solid $black;
+  min-width: 6rem;
+  min-height: 2.5rem;
+  border: 0px;
+  border-radius: 16px;
   color: $black;
   cursor: pointer;
+
+  margin: 2rem;
 }
 
-.btn-blue-default {
-  background-color: $light-blue;
+.btn-green {
+  background-color: $green;
+  font-weight: 100;
 }
 
-.btn-blue-pressed:focus {
-  background-color: $dark-blue;
+.btn-green:hover {
+  background-color: $dark-green;
 }
-
-.btn-blue-hover:hover {
-  background-color: $blue;
-}
-
-.btn-disabled {
-  background-color: #cfcfcf;
-}
-
-.btn-orange-default {
-  background-color: $light-orange;
-}
-
-.btn-orange-hover:hover {
-  background-color: $dark-orange;
-}
-
-.btn-orange-pressed:focus {
-  background-color: $dark-brown;
-}
-
-.btn-default {
-  background-color: $wheat;
-}
-
-.btn-hover:hover {
-  background-color: #cfcfcf;
-}
-
-.btn-pressed:focus {
-  background-color: #979797;
-}
-
-.btn-active {
-  background-color: $black;
-  color: $white;
+.btn-green:focus {
+  background-color: $gray-green;
 }
