@@ -2,21 +2,84 @@
   min-width: 6rem;
   min-height: 2.5rem;
   border: 0px;
-  border-radius: 16px;
+  border-radius: 32px;
   color: $black;
   cursor: pointer;
-
-  margin: 2rem;
 }
 
-.btn-green {
+.btn-purple-filled {
+  background-color: $purple;
+  color: $white;
+}
+
+.btn-purple-filled:hover,
+.btn-purple-filled-active:hover {
+  background-color: $dark-purple;
+}
+
+.btn-purple-filled:focus,
+.btn-purple-filled-active:focus {
+  background-color: $dark-slate-purple;
+}
+
+.btn-purple-filled-active {
+  padding: 1rem;
+  background-color: $purple;
+  border: 2px;
+  color: $green;
+
+  box-shadow: 0.01rem 0.01rem 1rem 0.2rem $green;
+}
+
+.btn-filled-disabled {
+  background-color: $light-gray;
+  color: #8a8a8a;
+}
+
+.btn-purple {
+  border: 1px solid $purple;
+  color: $purple;
+  background-color: $white;
+}
+
+.btn-purple:hover,
+.btn-purple-active:hover {
+  border-color: $dark-purple;
+  color: $dark-purple;
+}
+
+.btn-purple:focus,
+.btn-purple-active:focus {
+  border-color: $dark-slate-purple;
+  color: $dark-slate-purple;
+}
+
+.btn-purple-active {
   background-color: $green;
-  font-weight: 100;
+  box-shadow: 0.01rem 0.01rem 1rem 0.2rem $purple;
 }
 
-.btn-green:hover {
-  background-color: $dark-green;
+.btn-purple-disabled {
+  border: 1px solid $gray;
+  color: $gray;
+  background-color: $white;
 }
-.btn-green:focus {
-  background-color: $gray-green;
+
+.btn-default {
+  color: $black;
+  border: 0px;
+  background-color: $white;
+  cursor: pointer;
+}
+
+.btn-default:hover {
+  color: $purple;
+}
+
+.btn-default:focus {
+  color: $dark-purple;
+}
+
+.btn-td-underline {
+  text-decoration: underline;
 }
