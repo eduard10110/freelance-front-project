@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <Checkbox data={checkboxFakeData} state={state} setState={setState} />
       <Header />
-      <Card/>
+      <Card />
       <Footer />
     </div>
   );
