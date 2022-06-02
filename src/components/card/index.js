@@ -20,7 +20,7 @@ export default function Card() {
             </div>
             <div className="card-order">
                 <p>до 5 000 ₽</p>
-                <button>Завершить</button>
+                <button className="btn btn-purple">Завершить</button>
             </div>
         </div>
     );
