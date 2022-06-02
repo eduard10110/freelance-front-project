@@ -1,0 +1,23 @@
+.input {
+  border: 1px solid $light-gray;
+  border-radius: 16px;
+  min-width: 350px;
+  min-height: 35px;
+  padding: 0 1rem;
+  color: $black;
+}
+
+.input:focus {
+  border: 1px solid $light-gray;
+  color: $purple;
+}
+
+.input-error {
+  border: 1px solid $light-gray;
+  border-radius: 16px;
+  min-width: 350px;
+  min-height: 35px;
+  padding: 0 1rem;
+  border: 1px solid $pink;
+  color: $pink;
+}
