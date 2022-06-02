@@ -1,0 +1,11 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    header {
+        width: 950px;
+        height: 70px;
+        outline: 1px solid red;
+        display: flex;
+    }
+}
