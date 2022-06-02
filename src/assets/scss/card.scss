@@ -1,0 +1,27 @@
+.card {
+    width: 524px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 24px;
+    gap: 10px;
+    background: linear-gradient(109.46deg, #f0ecff 1.57%, #ffffff 100%);
+    box-shadow: 7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    .card-avatar {
+        display: flex;
+    }
+    .card-details {
+        div {
+            margin-top: 30px;
+        }
+    }
+    .card-order {
+        display: flex;
+        button {
+            position: absolute;
+            align-self: flex-end;
+        }
+    }
+}
