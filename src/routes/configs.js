@@ -33,4 +33,22 @@ export default [
     component: lazy(() => import("pages/myOrders")),
     props: {},
   },
+  {
+    path: routes.CONTACTS,
+    exact: true,
+    component: lazy(() => import("pages/contacts")),
+    props: {},
+  },
+  {
+    path: routes.SUPPORT,
+    exact: true,
+    component: lazy(() => import("pages/support")),
+    props: {},
+  },
+  {
+    path: routes.POPULAR_QUESTIONS,
+    exact: true,
+    component: lazy(() => import("pages/popularQuestions")),
+    props: {},
+  },
 ];

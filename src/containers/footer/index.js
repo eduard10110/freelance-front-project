@@ -14,6 +14,8 @@ export default function Footer() {
   const handleDownloadFromHuaweiStore = () =>
     alert("download from Huawei store");
 
+  const handleNavigate = (path) => () => navigate(path);
+
   return (
     <footer className="footer-container-wrapper">
       <div className="footer-subCategories-wrapper">
@@ -41,20 +43,32 @@ export default function Footer() {
         </div>
         <div className="for-workers-container-wrapper">
           <p className="body2">Для работодателей</p>
-          <p className="body3">Создать задание</p>
+          <p onClick={handleNavigate(routes.CREATE_TASK)} className="body3">
+            Создать задание
+          </p>
         </div>
         <div className="for-workers-container-wrapper">
           <p className="body2">Для исполнителей</p>
-          <p className="body3">Найти задание</p>
+          <p onClick={handleNavigate(routes.FIND_TASK)} className="body3">
+            Найти задание
+          </p>
         </div>
         <div className="for-workers-container-wrapper">
           <p className="body2">Помощь</p>
-          <p className="body3">Контакты</p>
-          <p className="body3">Служба поддержки</p>
-          <p className="body3">Частые вопросы</p>
+          <p onClick={handleNavigate(routes.CONTACTS)} className="body3">
+            Контакты
+          </p>
+          <p onClick={handleNavigate(routes.SUPPORT)} className="body3">
+            Служба поддержки
+          </p>
+          <p
+            onClick={handleNavigate(routes.POPULAR_QUESTIONS)}
+            className="body3"
+          >
+            Частые вопросы
+          </p>
           <p className="body3">Как работает Сервис</p>
           <p className="body2 mt-2">Подписывайся</p>
-          {/* <div className="telegram-logo mt-2"></div> */}
         </div>
       </div>
       <div className="footer-bottom footer-subCategories-wrapper">
