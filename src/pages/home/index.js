@@ -1,9 +1,11 @@
-import Footer from "containers/footer";
+import Card from "components/card";
+import PersonalCard from "components/personalCard";
 
 export default function Home() {
   return (
     <div>
-      <Footer />
+      {/* <Card /> */}
+      <PersonalCard />
     </div>
   );
 }
