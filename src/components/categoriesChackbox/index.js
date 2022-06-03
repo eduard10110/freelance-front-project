@@ -18,7 +18,7 @@ export default function CategoriesCheckbox({ data, state, setState }) {
 
   return (
     <div className="categories-checkbox-wrapper">
-      {data?.map((elem, index) => {
+      {data?.map((elem) => {
         const opened = radioButtonsState.some((item) => item === elem.id);
         return (
           <div key={elem.id}>
@@ -45,7 +45,10 @@ export default function CategoriesCheckbox({ data, state, setState }) {
                     </div>
                     {opened &&
                       item.subCategories?.map((category) => (
-                        <div className="subCategories-item-margin" key={category.id}>
+                        <div
+                          className="subCategories-item-margin"
+                          key={category.id}
+                        >
                           <SubCategoriesItem
                             handleRadioButtonChange={handleRadioButtonChange}
                             elem={category}
