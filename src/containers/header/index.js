@@ -4,7 +4,7 @@ import logo from "../../assets/images/logo.png";
 import { authNavLinks, navLinks } from "../../helpers/enums/navEnums";
 
 export default function Header() {
-  const [auth, setAuth] = useState(false);
+  const [auth, setAuth] = useState(true);
   return (
     <div className="header">
       <header>

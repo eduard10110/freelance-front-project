@@ -1,23 +1,22 @@
 .footer-container-wrapper {
   width: 100%;
-  height: 25rem;
+  height: 27rem;
   background-color: $purple;
-  text-align: center;
   position: absolute;
   bottom: 0%;
 
   .footer-subCategories-wrapper {
     display: flex;
     justify-content: space-between;
+    padding: 1rem 15rem 0 15rem;
   }
 
   .subCategories-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 1.5rem;
 
-    div {
+    .shop-logo {
       margin-top: 2rem;
     }
   }
@@ -48,5 +47,49 @@
     height: 2rem;
     background: url("../images/download-from-huawei-store.png") center no-repeat;
     cursor: pointer;
+  }
+
+  .for-workers-container-wrapper {
+    padding: 1rem 0 0 0;
+  }
+  .body2,
+  .body3 {
+    color: $white;
+  }
+
+  .body3 {
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+  .telegram-logo-wrapper {
+    width: 17rem;
+    .telegram-logo {
+      height: 2rem;
+      background: url("../images/telegram-icon.png") center no-repeat;
+      cursor: pointer;
+    }
+  }
+
+  .bottom-logo {
+    display: flex;
+    justify-content: space-between;
+
+    .mir-access-logo {
+      width: 6.5rem;
+      height: 2.5rem;
+      background: url("../images/mir-accept-logo.png") center no-repeat;
+    }
+
+    .visa-verification-logo {
+      width: 6.5rem;
+      height: 2.5rem;
+      background: url("../images//visa-verification-logo.png") center no-repeat;
+    }
+
+    .mastercard-id-check-logo {
+      width: 6.5rem;
+      height: 2.5rem;
+      background: url("../images/mastercard-id-check-logo.png") center no-repeat;
+    }
   }
 }
