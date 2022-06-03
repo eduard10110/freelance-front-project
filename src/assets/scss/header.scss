@@ -4,8 +4,20 @@
     justify-content: center;
     header {
         width: 950px;
-        height: 70px;
-        outline: 1px solid red;
+        height: 80px;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav {
+            a {
+                text-decoration: none;
+                margin-right: 33px;
+            }
+        }
+        .auth {
+            a, span {
+                margin-left: 20px;
+            }
+        }
     }
 }

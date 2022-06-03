@@ -3,5 +3,6 @@ export default {
   HOME: "/",
   CREATE_TASK: "create-task",
   FIND_TASK: "find-task",
-
+  PERFORMERS: "performers",
+  MY_ORDERS: "my-orders"
 };
