@@ -9,8 +9,15 @@
     background: linear-gradient(109.46deg, #f0ecff 1.57%, #ffffff 100%);
     box-shadow: 7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
+    &:hover {
+        background: $purple;
+    }
     .card-avatar {
         display: flex;
+        width: 74px;
+        height: 74px;
+        border-radius: 10px;
+        background: #F8F8F8;
     }
     .card-details {
         div {
