@@ -5,8 +5,6 @@ import SubCategoriesItem from "components/subCategoriesItem";
 export default function CategoriesCheckbox({ data, state, setState }) {
   const [radioButtonsState, setRadioButtonsState] = useState([]);
 
-  console.log(state);
-
   const handleRadioButtonChange = (id) => () => {
     let newData = [...radioButtonsState];
 
