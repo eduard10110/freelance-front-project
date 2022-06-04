@@ -1,23 +1,23 @@
 .header {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  header {
+    height: 80px;
     display: flex;
-    justify-content: center;
-    header {
-        width: 950px;
-        height: 80px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .nav {
-            a {
-                text-decoration: none;
-                margin-right: 33px;
-            }
-        }
-        .auth {
-            a, span {
-                margin-left: 20px;
-            }
-        }
+    justify-content: space-between;
+    align-items: center;
+    .nav {
+      a {
+        text-decoration: none;
+        margin-right: 33px;
+      }
     }
+    .auth {
+      a,
+      span {
+        margin-left: 20px;
+      }
+    }
+  }
 }

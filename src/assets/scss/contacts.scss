@@ -1,0 +1,30 @@
+.contacts-container-wrapper {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+
+  .contacts-container-inner {
+    padding: 5rem 2.5rem 15rem;
+
+    .contacts-info {
+      div {
+        margin-top: 2rem;
+
+        p {
+          height: 1.8rem;
+        }
+      }
+    }
+  }
+
+  .contacts-container-location-logo-green {
+    width: 13rem;
+    height: 23rem;
+    background: url("../images/contacts-location-green.png") center no-repeat;
+    margin-top: 17rem;
+  }
+  .map-container {
+    width: 100%;
+    height: 20vh;
+  }
+}

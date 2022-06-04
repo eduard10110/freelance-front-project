@@ -6,9 +6,9 @@ import RouteBuilder from "routes";
 export default function App() {
   return (
     <div>
-      <Header/>
+      <Header />
       <RouteBuilder />
-      {/* <Footer/> */}
+      <Footer />
     </div>
   );
 }
