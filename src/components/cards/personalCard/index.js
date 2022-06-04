@@ -1,6 +1,6 @@
 import React from "react";
-import defaultPersonImage from "../../assets/images/default-person.png";
-import ratingStar from "../../assets/images/rating-star.png";
+import defaultPersonImage from "../../../assets/images/default-person.png";
+import ratingStar from "../../../assets/images/rating-star.png";
 export default function PersonalCard() {
     return (
         <div className="personal-card">

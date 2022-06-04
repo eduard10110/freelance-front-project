@@ -1,11 +1,13 @@
-import Card from "components/card";
-import PersonalCard from "components/personalCard";
+import Card from "components/cards/card";
+import ContractCard from "components/cards/contractCard";
+import PersonalCard from "components/cards/personalCard";
 
 export default function Home() {
   return (
     <div>
       {/* <Card /> */}
-      <PersonalCard />
+      {/* <PersonalCard /> */}
+      <ContractCard/>
     </div>
   );
 }
