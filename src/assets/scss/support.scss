@@ -1,0 +1,61 @@
+.support-container-wrapper {
+  margin-top: 3rem;
+  padding: 0 15rem;
+  width: 100%;
+  min-height: 90vh;
+
+  .support-container-header {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      width: 19rem;
+      height: 10rem;
+      background: url("../images/support-page-photo.png") center no-repeat;
+    }
+  }
+
+  .description {
+    margin-top: 1rem;
+    width: 47rem;
+  }
+  .inputs-group {
+    margin-top: 3rem;
+
+    div {
+      margin-top: 1rem;
+      min-height: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .problem-description {
+        height: 7rem;
+        margin-top: 1rem;
+      }
+
+      label {
+        cursor: pointer;
+      }
+
+      input {
+        width: 5rem;
+      }
+    }
+  }
+
+  .checkbox-section {
+    display: flex;
+    text-align: center;
+    margin-top: 1rem;
+
+    p {
+      margin-left: 2rem;
+    }
+  }
+
+  .send-button {
+    padding: 0 2rem;
+    margin-top: 2rem;
+  }
+}

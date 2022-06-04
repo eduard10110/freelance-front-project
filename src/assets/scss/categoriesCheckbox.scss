@@ -21,23 +21,6 @@
       margin-left: 1rem;
       cursor: pointer;
     }
-
-    .checkbox {
-      width: 1rem;
-      height: 1rem;
-      border: 2px solid $purple;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .checkbox-checked {
-      width: 1rem;
-      height: 1rem;
-      border: 2px solid $purple;
-      border-radius: 4px;
-      cursor: pointer;
-      background: url("../images/checkbox-checked.png") center no-repeat;
-    }
   }
 
   .subCategories-item {
@@ -47,4 +30,21 @@
   .subCategories-item-margin {
     margin-left: 8rem;
   }
+}
+
+.checkbox {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid $purple;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkbox-checked {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid $purple;
+  border-radius: 4px;
+  cursor: pointer;
+  background: url("../images/checkbox-checked.png") center no-repeat;
 }
