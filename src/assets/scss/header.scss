@@ -1,23 +1,126 @@
 .header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  header {
-    height: 80px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .nav {
-      a {
-        text-decoration: none;
-        margin-right: 33px;
-      }
+    justify-content: center;
+    header {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav {
+            min-width: 33rem;
+            display: flex;
+            justify-content: center;
+            margin-left: 1rem;
+            a {
+                text-decoration: none;
+                margin-right: 1rem;
+            }
+        }
+        .auth {
+            a,
+            span {
+                margin-left: 20px;
+            }
+        }
+        .auth-user-actions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .notifications {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                span {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 0.5rem;
+                    i {
+                        width: 28px;
+                        height: 28px;
+                    }
+                }
+                .message-icon i {
+                    background: url("../images/icons/message.svg") no-repeat;
+                }
+                .notification-icon {
+                    padding-top: 0.4rem;
+                    i {
+                        background: url("../images/icons/notification.svg")
+                            no-repeat;
+                    }
+                }
+            }
+            .header-personal-info {
+                display: flex;
+                margin-left: 0.3rem;
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 48px;
+                    height: 48px;
+                    background-color: $light-purple;
+                    border-radius: 10px;
+                    margin-left: 0.4rem;
+                    cursor: pointer;
+                }
+                .header-user-currency span:last-child {
+                    margin-left: 0.1rem;
+                }
+                .header-user-profile {
+                    position: relative;
+                    span {
+                        i {
+                            display: block;
+                            width: 24px;
+                            height: 24px;
+                            background: url("../images/icons/union.svg")
+                                no-repeat;
+                            background-position-x: center;
+                        }
+                    }
+                    .profile-dropdown {
+                        display: none;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        position: absolute;
+                        width: 173px;
+                        height: 182px;
+                        top: 3rem;
+                        right: 0rem;
+                        background-color: #ffffff;
+                        border-radius: 0px 0px 12px 12px;
+                        padding: 1rem 2rem;
+                        a {
+                          text-decoration: none;
+                          margin-bottom: 1rem;
+                          text-align: left;
+                        }
+                        .settings, .exit {
+                          display: flex;
+                          justify-content: space-between;
+                          i {
+                            width: 22px;
+                            height: 22px;
+                          }
+                          a {
+                            margin-left: 0.5rem;
+                          }
+                        }
+                        .settings i {
+                          background: url("../images/icons/settings.svg");
+                        }
+                        .exit i {
+                          background: url("../images/icons/exit.svg");
+                        }
+                    }
+                    &:hover .profile-dropdown {
+                      display: flex;
+                    }
+                }
+            }
+        }
     }
-    .auth {
-      a,
-      span {
-        margin-left: 20px;
-      }
-    }
-  }
 }
