@@ -1,11 +1,7 @@
-import { useLoadScript } from "@react-google-maps/api";
-import GoogleMaps from "components/googleMaps";
 import React from "react";
+import { YMaps, Map, Placemark } from "react-yandex-maps";
 
 export default function Contacts() {
-  const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyAezzENRDI0Li-oZEK1F1XL2bxW93ibqWY",
-  });
   return (
     <div className="contacts-container-wrapper">
       <div className="contacts-container-location-logo-green"></div>
@@ -22,8 +18,20 @@ export default function Contacts() {
             <p className="body1">85, ком. 9</p>
           </div>
         </div>
-        <div className="google-map">
-          {!isLoaded ? <div>Loading...</div> : <GoogleMaps />}
+        <div className="map-container">
+          <YMaps>
+            <Map
+              width={"21rem"}
+              height={"17rem"}
+              defaultState={{ center: [53.1863672, 50.0914442, 17], zoom: 9 }}
+            >
+              {" "}
+              <Placemark
+                modules={["geoObject.addon.balloon", "geoObject.addon.hint"]}
+                geometry={[53.1863672, 50.0914442, 17]}
+              />
+            </Map>
+          </YMaps>
         </div>
       </div>
     </div>
