@@ -5,6 +5,9 @@
 
   .contacts-container-inner {
     padding: 5rem 2.5rem 15rem;
+    width: 66%;
+    display: flex;
+    justify-content: space-between;
 
     .contacts-info {
       div {
@@ -24,7 +27,7 @@
     margin-top: 17rem;
   }
   .map-container {
-    width: 100%;
+    width: 15rem;
     height: 20vh;
   }
 }
