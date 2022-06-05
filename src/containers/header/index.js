@@ -2,16 +2,22 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import { authNavLinks, navLinks } from "../../helpers/enums/navEnums";
-import {useDispatch} from 'react-redux';
-import {loginModalVisible, registrationModalVisible} from "../../store/action-creators/app";
+import {shallowEqual, useDispatch, useSelector} from 'react-redux';
+import {loginModalVisible, registrationModalVisible, setUserParams} from "../../store/action-creators/app";
+import { userParamsSelector } from '../../store/selectors/app';
 
 export default function Header() {
-  const dispatch = useDispatch();
-    const [auth, setAuth] = useState(true);
+    const dispatch = useDispatch();
+    const userParams = useSelector(userParamsSelector, shallowEqual);
+    const {auth} = userParams;
 
 
     const handleAuthModal = (type) => () => {
       type === 'login' ? dispatch(loginModalVisible(true)) : dispatch(registrationModalVisible(true))
+    }
+
+    const handleLogout = () => {
+        dispatch(setUserParams({auth: false}))
     }
 
     return (
@@ -33,7 +39,7 @@ export default function Header() {
                         ? authNavLinks.map((link) => (
                               <NavLink
                                   to={link.path}
-                                  className="nav-link body3"
+                                  className="nav-link-auth body3"
                                   activeClassName="active"
                                   key={link.label}
                               >
@@ -51,7 +57,7 @@ export default function Header() {
                               </NavLink>
                           ))}
                 </div>
-                {auth ? (
+                {!auth ? (
                     <div className="auth">
                         <p className="body5" onClick={handleAuthModal('login')}>
                             Войти
@@ -95,12 +101,16 @@ export default function Header() {
                                     <i></i>
                                 </span>
                                 <div className="profile-dropdown">
-                                    <Link to="/" className="body3">
-                                        Профиль
-                                    </Link>
-                                    <Link to="/" className="body3">
-                                        Тарифы
-                                    </Link>
+                                    <span>
+                                        <Link to="/" className="body3">
+                                            Профиль
+                                        </Link>
+                                    </span>
+                                    <span>
+                                        <Link to="/" className="body3">
+                                            Тарифы
+                                        </Link>
+                                    </span>
                                     <span className="settings">
                                         <i></i>
                                         <Link to="/" className="body3">
@@ -109,9 +119,9 @@ export default function Header() {
                                     </span>
                                     <span className="exit">
                                         <i></i>
-                                        <Link to="/" className="body3">
+                                        <a className="body3" onClick={handleLogout}>
                                             Выйти
-                                        </Link>
+                                        </a>
                                     </span>
                                 </div>
                             </div>
