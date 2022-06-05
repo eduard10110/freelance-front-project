@@ -10,6 +10,7 @@ export default function ModalComponent({ children, isOpen, customStyles, onReque
             onRequestClose={onRequestClose}
             style={customStyles}
             // contentLabel="Example Modal"
+            ariaHideApp={false}
         >
             {children}
         </Modal>
