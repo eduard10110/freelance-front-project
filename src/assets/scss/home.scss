@@ -2,16 +2,42 @@
   width: 100%;
   min-height: 150vh;
 
-  .first-container-wrapper {
+  .page-wrapper {
     width: 100%;
-    height: 73.8vh;
     background: url("../images//home-background-1.png") center no-repeat;
+    height: 73.8vh;
+
+    .page {
+      display: flex;
+      justify-content: center;
+
+      .images-wrapper {
+        display: flex;
+        margin-top: 4rem;
+
+        .girl-image {
+          position: absolute;
+          right: 0%;
+        }
+
+        .boy-image {
+          position: absolute;
+          right: 15%;
+          top: 10%;
+        }
+      }
+    }
+
+    .content-wrapper {
+      width: 950px;
+    }
+  }
+
+  .first-container-wrapper {
+    margin-top: 10rem;
+    width: 100%;
     display: flex;
     position: relative;
-
-    .container-inner {
-      padding: 10rem 0 0 15rem;
-    }
 
     h1 {
       text-transform: uppercase;
@@ -31,37 +57,24 @@
         padding: 0 1rem 0 1rem;
       }
     }
-
-    .images-wrapper {
-      display: flex;
-      margin-top: 4rem;
-
-      .girl-image {
-        margin-top: 5rem;
-        width: 22rem;
-        height: 27rem;
-        background: url("../images/home-girl.png") center no-repeat;
-        background-size: cover;
-      }
-
-      .boy-image {
-        width: 23rem;
-        height: 17.5rem;
-        background-color: wheat;
-        background: url("../images/home-boy.png") no-repeat;
-        background-size: cover;
-      }
-    }
   }
 
   .how-works-service-container-wrapper {
-    padding: 15rem;
     width: 100%;
-    height: 90vh;
     background-color: $hero-color;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    .how-works-service-container {
+      display: flex;
+      justify-content: center;
+
+      .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90vh;
+        width: 950px;
+      }
+    }
 
     h2 {
       text-transform: uppercase;
@@ -103,7 +116,12 @@
     margin-top: 4rem;
 
     .reviews-container {
-      padding: 0 15rem;
+      display: flex;
+      justify-content: center;
+
+      .content-wrapper {
+        width: 950px;
+      }
 
       h2 {
         text-transform: uppercase;
@@ -143,7 +161,15 @@
         width: 100%;
         height: 65vh;
         background: url("../images/home-background-2.png") center no-repeat;
-        padding: 0 15rem;
+
+        .content-wrapper {
+          display: flex;
+          justify-content: center;
+
+          .content {
+            width: 950px;
+          }
+        }
       }
     }
   }
