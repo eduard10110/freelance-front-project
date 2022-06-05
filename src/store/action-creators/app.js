@@ -1,4 +1,4 @@
-import { LOGIN_MODAL, REGISTRATION_MODAL } from "store/action-types/app"
+import { LOGIN_MODAL, REGISTRATION_MODAL, USER_PARAMS } from "store/action-types/app"
 
 export const loginModalVisible = (payload) => {
     return {
@@ -9,6 +9,13 @@ export const loginModalVisible = (payload) => {
 export const registrationModalVisible = (payload) => {
     return {
         type: REGISTRATION_MODAL,
+        payload
+    }
+}
+
+export const setUserParams = (payload) => {
+    return {
+        type: USER_PARAMS,
         payload
     }
 }
