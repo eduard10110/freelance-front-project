@@ -78,7 +78,7 @@
             cursor: pointer;
             align-items: center;
             p {
-                margin-left: 0;
+                margin-left: 25px;
             }
             input {
                 margin-right: 15px;
@@ -115,4 +115,68 @@
             }
         }
     }
+}
+
+
+
+// CUSTOM CHECKBOX
+
+.reg-checkbox-container {
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .reg-checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .reg-checkmark {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border: 1px solid #000000;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .reg-checkbox-container:hover input ~ .reg-checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .reg-checkbox-container input:checked ~ .reg-checkmark {
+    background-color: #fff;
+    border-radius: 6px;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .reg-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .reg-checkbox-container input:checked ~ .reg-checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .reg-checkbox-container .reg-checkmark:after {
+    left: 2.5px;
+    top: 2.5px;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    border-radius: 50%;
 }

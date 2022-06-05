@@ -80,9 +80,9 @@ export default function Registration() {
                     </label>
                 </div>
                 <div className="reg-terms">
-                <label className="container">
+                <label className="login-checkbox-container">
                     <input type="checkbox"/>
-                    <span className="checkmark"></span>
+                    <span className="login-checkmark"></span>
                 </label>
                     <p className="body3">Нажимая на кнопку, я соглашаюсь на <span className="body5">обработку персональных данных</span></p>
                 </div>
