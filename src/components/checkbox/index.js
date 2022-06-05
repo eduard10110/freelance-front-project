@@ -14,7 +14,7 @@ export default function Checkbox({
         className={checked ? "checkbox-checked" : "checkbox"}
       ></div>
       {label && (
-        <p className={labelClassName || "body3"} htmlFor={label}>
+        <p className={labelClassName || "body3"} htmlFor={label}> 
           {label}
         </p>
       )}
