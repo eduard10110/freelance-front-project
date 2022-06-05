@@ -110,14 +110,14 @@
 
 // CUSTOM CHECKBOX
 
-.container {
+.login-checkbox-container {
     position: relative;
     cursor: pointer;
     font-size: 22px;
   }
   
   /* Hide the browser's default checkbox */
-  .container input {
+  .login-checkbox-container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -126,7 +126,7 @@
   }
   
   /* Create a custom checkbox */
-  .checkmark {
+  .login-checkmark {
     position: absolute;
     top: -2px;
     left: 0;
@@ -138,30 +138,30 @@
   }
   
   /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
+  .login-checkbox-container:hover input ~ .login-checkmark {
     background-color: #ccc;
   }
   
   /* When the checkbox is checked, add a blue background */
-  .container input:checked ~ .checkmark {
+  .login-checkbox-container input:checked ~ .login-checkmark {
     background-color: $black;
     border-radius: 6px;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
+  .login-checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
   
   /* Show the checkmark when checked */
-  .container input:checked ~ .checkmark:after {
+  .login-checkbox-container input:checked ~ .login-checkmark:after {
     display: block;
   }
   
   /* Style the checkmark/indicator */
-  .container .checkmark:after {
+  .login-checkbox-container .login-checkmark:after {
     left: 5px;
     top: 1px;
     width: 5px;
