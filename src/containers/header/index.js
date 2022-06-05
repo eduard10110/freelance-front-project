@@ -21,6 +21,12 @@ export default function Header() {
                     <Link to="/">
                         <img src={logo} alt="logo" />
                     </Link>
+                  {/* <span className="exit">
+                    <i></i>
+                    <Link to="/" className="body3">
+                      Выйти
+                    </Link>
+                  </span> */}
                 </div>
                 <div className="nav">
                     {auth

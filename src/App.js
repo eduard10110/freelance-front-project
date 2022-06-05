@@ -17,6 +17,7 @@ export default function App() {
       <RouteBuilder />
       {loginModalVisible && <Login/>}
       {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

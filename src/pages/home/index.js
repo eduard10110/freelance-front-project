@@ -1,11 +1,11 @@
-import ContractCard from "components/cards/contractCard";
+import HomeFirstContainer from "containers/homeFirstContainer";
+import HomeHowWorkServiceContainer from "containers/homeHowWorkServiceContainer";
 
 export default function Home() {
   return (
-    <div>
-      {/* <Card /> */}
-      {/* <PersonalCard /> */}
-      <ContractCard />
+    <div className="home-container-wrapper">
+      <HomeFirstContainer />
+      <HomeHowWorkServiceContainer />
     </div>
   );
 }
