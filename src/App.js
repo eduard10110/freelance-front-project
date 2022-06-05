@@ -8,7 +8,7 @@ export default function App() {
     <div>
       <Header />
       <RouteBuilder />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
