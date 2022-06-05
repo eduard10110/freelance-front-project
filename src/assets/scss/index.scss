@@ -11,3 +11,12 @@
 @import "footer.scss";
 @import "support.scss";
 @import "contacts.scss";
+@import "login.scss";
+
+
+.ReactModalPortal {
+    position: relative;
+    z-index: 999;
+    padding: 32px;
+    border-radius: 16px;
+}

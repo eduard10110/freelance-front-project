@@ -1,0 +1,2 @@
+export const LOGIN_MODAL = "LOGIN_MODAL";
+export const REGISTRATION_MODAL = "REGISTRATION_MODAL";
