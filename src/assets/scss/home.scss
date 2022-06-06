@@ -19,7 +19,7 @@
         .girl-image {
           position: absolute;
           right: 0%;
-          bottom: 3%
+          bottom: 3%;
         }
 
         .boy-image {
@@ -159,6 +159,7 @@
       height: 90vh;
       display: flex;
       align-items: flex-end;
+      position: relative;
 
       .start-today-container {
         width: 100%;
@@ -169,8 +170,38 @@
           display: flex;
           justify-content: center;
 
-          .content {
+          .girl-with-computer-image {
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+          }
+
+          .content-wrapper {
             width: 950px;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .content {
+              z-index: 9999999999999;
+              margin-top: 8rem;
+            }
+
+            h2 {
+              text-transform: uppercase;
+              margin-bottom: 2rem;
+            }
+
+            .buttons-wrapper {
+              margin-top: 2rem;
+              width: 430px;
+              display: flex;
+              justify-content: space-between;
+              .btn {
+                padding: 0 2rem;
+              }
+            }
           }
         }
       }

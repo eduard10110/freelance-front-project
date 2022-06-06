@@ -6,13 +6,6 @@ import defaultPersonContract from "../../../assets/images/default-person-contrac
 import arrowOpen from "../../../assets/images/arrow-open.png";
 
 export default function ContractCard() {
-  const [arrowOpened, setArrowOpened] = useState(false);
-
-  console.log(arrowOpened);
-
-  const handleArrowOpen = () => {
-    setArrowOpened(!arrowOpened);
-  };
   return (
     <div className="contract-card">
       <div className="contract-card-heart1">
@@ -25,8 +18,8 @@ export default function ContractCard() {
           Приятный специалист. Составил договор в кратчайшие сроки. Рекомендую!
         </p>
       </div>
-      <div className={`contract-card-person ${arrowOpened ? "open" : ""}`}>
-        <span onClick={handleArrowOpen} role="presentation">
+      <div className={`contract-card-person`}>
+        <span role="presentation">
           <img src={arrowOpen} alt="arrow" />
         </span>
         <div className="contract-card-person-info">

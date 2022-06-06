@@ -83,6 +83,7 @@
       align-items: center;
       background: $light-purple;
       padding: 0 2rem 2rem 2rem;
+
       button {
         width: 100%;
         padding: 1rem;
@@ -90,6 +91,10 @@
     }
   }
   .open {
+    bottom: -1rem;
+  }
+
+  .contract-card-person:hover {
     bottom: -1rem;
   }
 }
