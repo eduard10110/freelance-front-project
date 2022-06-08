@@ -41,6 +41,7 @@
     position: absolute;
     bottom: -7rem;
     z-index: 99;
+    transition: bottom 300ms linear;
 
     span {
       position: absolute;

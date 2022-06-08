@@ -1,0 +1,38 @@
+.popular-questions-container-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.interrogative-purple {
+  position: absolute;
+  top: 0%;
+  right: 0;
+}
+
+.interrogative-green {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+.popular-questions-header {
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+.question-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-close-icon {
+  cursor: pointer;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

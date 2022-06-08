@@ -14,11 +14,4 @@
 @import "login.scss";
 @import "registration.scss";
 @import "home.scss";
-
-
-.ReactModalPortal {
-    position: relative;
-    z-index: 999;
-    padding: 32px;
-    border-radius: 16px;
-}
+@import "popularQuestions.scss";

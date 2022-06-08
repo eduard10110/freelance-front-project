@@ -13,6 +13,28 @@ $dark-gray: #6d6d6d;
 $pink: #ff7f7f;
 $hero-color: #c0b1ff;
 
+.ReactModalPortal {
+  position: relative;
+  z-index: 999;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.page-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+}
+
+.content-wrapper {
+  position: relative;
+  width: 950px;
+}
+
 .mt-1 {
   margin-top: 1rem;
 }
