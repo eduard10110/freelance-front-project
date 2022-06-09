@@ -1,4 +1,4 @@
-import ai from "../../assets/images/categories/delivery.png";
+import ai from "../../assets/images/categories/ai.png";
 import beautyHealth from "../../assets/images/categories/beauty-health.png";
 import car from "../../assets/images/categories/car.png";
 import cleaning from "../../assets/images/categories/cleaning.png";
