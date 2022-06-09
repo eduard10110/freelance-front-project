@@ -1,27 +1,47 @@
 import React from "react";
+import cardIcon from "assets/images/task-card-icon.png";
+import PropTypes from "prop-types";
 
 // texts will coming from props or from backend
-export default function Card() {
-    return (
-        <div className="card">
-            <div className="card-avatar">
-                <img src="" alt="avatar" />
-            </div>
-            <div className="card-details">
-                <p>Ремонт мойки из иску...</p>
-                <div>
-                    <p>улица Глазунова, 6, Казань</p>
-                    <p>25 марта — 30 марта</p>
-                </div>
-                <div>
-                    <p>Иван И.</p>
-                    <p>Нет отзывов</p>
-                </div>
-            </div>
-            <div className="card-order">
-                <p>до 5 000 ₽</p>
-                <button className="btn btn-purple">Завершить</button>
-            </div>
+export default function Card({ data }) {
+  const {
+    name,
+    budget,
+    address,
+    dateFrom,
+    dateTo,
+    userName,
+    comments,
+    clicked,
+  } = data;
+  return (
+    <div className="card">
+      <div className="card-avatar">
+        <img src={cardIcon} alt="avatar" />
+      </div>
+      <div className="card-details">
+        <p>{name}</p>
+        <div>
+          <p>{address}</p>
+          <p className="card-dates">
+            {dateFrom} — {dateTo}
+          </p>
         </div>
-    );
+        <div>
+          <p>{userName}</p>
+          <p className="card-comments">{!comments && "Нет отзывов"}</p>
+        </div>
+      </div>
+      <div className="card-order">
+        <p>{budget}</p>
+        <button className="btn btn-purple">
+          {clicked ? "Отклик отправлен" : "Откликнуться"}
+        </button>
+      </div>
+    </div>
+  );
 }
+
+Card.propTypes = {
+  data: PropTypes.object.isRequired,
+};
