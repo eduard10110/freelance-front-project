@@ -28,9 +28,8 @@ export default function PopularQuestions() {
         <div className="content-wrapper popular-questions-container-wrapper">
           <h2 className="popular-questions-header">Популярные вопросы</h2>
           <div className="questions-wrapper">
-            <hr />
             {POPULAR_QUESTIONS_DATA.map(({ label, answer }) => (
-              <div key={label} className="question-item">
+              <div key={label} className={`question-item ${openedQuestion === label ? 'active' : ''}`}>
                 <div className="question-container">
                   <h4>{label}</h4>
                   {openedQuestion === label ? (
@@ -52,8 +51,7 @@ export default function PopularQuestions() {
                     />
                   )}
                 </div>
-                {openedQuestion === label && <p className="body3">{answer}</p>}
-                <hr />
+                {<p className="body3">{answer}</p>}
               </div>
             ))}
           </div>
