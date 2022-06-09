@@ -27,7 +27,6 @@
   background-color: $purple;
   border: 2px;
   color: $green;
-
   box-shadow: 0.01rem 0.01rem 1rem 0.2rem $green;
 }
 
@@ -67,7 +66,7 @@
 
 .btn-default {
   color: $black;
-  border: 1px solid $black;
+  border: 0;
   background-color: transparent;
   cursor: pointer;
 }
@@ -78,6 +77,10 @@
 
 .btn-default:focus {
   color: $dark-purple;
+}
+
+.btn-default-active {
+  color: $purple;
 }
 
 .btn-td-underline {

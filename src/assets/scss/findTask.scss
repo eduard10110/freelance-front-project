@@ -1,0 +1,103 @@
+.find-task-page-wrapper {
+  min-height: 200vh;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.find-task-container-header {
+  margin-bottom: 70px;
+}
+
+.filters-wrapper {
+  width: 850px;
+  position: relative;
+}
+
+.search-wrapper {
+  height: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  input {
+    height: 35px;
+  }
+}
+
+.search-task-input {
+  width: 705px;
+}
+
+.home-search-input {
+  width: 330px;
+}
+
+.search-radius-input {
+  width: 200px;
+}
+
+.budget-input {
+  width: 200px;
+}
+
+.filters-checkbox-item {
+  display: flex;
+
+  p {
+    margin-left: 20px;
+  }
+}
+
+.filters-checkboxes-wrapper {
+  width: 730px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 330px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.location-icon-container {
+  width: 1rem;
+  position: absolute;
+  bottom: 20%;
+  right: 3%;
+}
+
+.find-task-main-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 46px;
+}
+
+.find-task-main-content {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content-filters-wrapper {
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content-filters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasks-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-card {
+  margin-top: 30px;
+}

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import SubCategoriesItem from "components/subCategoriesItem";
 
 export default function CategoriesCheckbox({ data, state, setState }) {
-  const [radioButtonsState, setRadioButtonsState] = useState([]);
+  const [radioButtonsState, setRadioButtonsState] = useState([1]);
 
   const handleRadioButtonChange = (id) => () => {
     let newData = [...radioButtonsState];
@@ -31,8 +31,8 @@ export default function CategoriesCheckbox({ data, state, setState }) {
               elem.subCategories?.map((item) => {
                 const opened = radioButtonsState.some((id) => id === item.id);
                 return (
-                  <div>
-                    <div className="subCategories-item" key={item.id}>
+                  <div key={item.id}>
+                    <div className="subCategories-item">
                       <SubCategoriesItem
                         handleRadioButtonChange={handleRadioButtonChange}
                         elem={item}
