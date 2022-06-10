@@ -1,6 +1,6 @@
 .home-container-wrapper {
     width: 100%;
-    min-height: 150vh;
+    // min-height: 150vh;
 
     h2 {
         max-width: 20rem
@@ -8,8 +8,9 @@
 
     .page-wrapper {
         width: 100%;
-        background: url("../images//home-background-1.png") center no-repeat;
-        height: 73.8vh;
+        background: url("../images//home-background-1.png") 50% 0 no-repeat;
+        background-size: cover;
+        // height: 73.8vh;
 
         .page {
             display: flex;
@@ -28,8 +29,13 @@
 
                 .boy-image {
                     position: absolute;
-                    right: 15%;
-                    top: 3%;
+                    background-color: rgba(93, 255, 129, 0.65);
+                    backdrop-filter: blur(12px);
+                    border-radius: 32px;
+                    overflow: hidden;
+                    box-shadow: 111px 125px 67px rgba(0, 0, 0, 0.01), 63px 70px 57px rgba(0, 0, 0, 0.05), 28px 31px 42px rgba(0, 0, 0, 0.09), 7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+                    right: 26%;
+                    top: 1.7%;
                 }
             }
         }
