@@ -1,0 +1,37 @@
+.performers-wrapper {
+    margin-top: 60px;
+    .content-wrapper {
+        margin: 30px auto;
+    }
+}
+
+.performers-sorting {
+    margin-top: 24px;
+    display: flex;
+    p {
+        margin-right: 40px;
+    }
+    button {
+        margin-right: 5px;
+    }
+}
+
+.performers-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+    gap: 40px;
+    .performers-content-title {
+        margin-bottom: 33px;
+    }
+}
+
+.performers-task-card {
+    .personal-card {
+        margin-bottom: 64px;
+    }
+}
+
+.performers-checkbox-filter {
+    margin: -20px 0 0 5rem;
+}
