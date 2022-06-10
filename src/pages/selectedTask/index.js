@@ -3,6 +3,8 @@ import { FIND_TASK_MAIN_CONTENT_FAKE_DATA } from "helpers/constants";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ordererPicture from "assets/images/find-task-orderer-picture.png";
+import FindTaskTaskInfoCard from "components/cards/find-task-taskInfo-card";
+import Card from "components/cards/card";
 
 //the data must be dynamic
 export default function SelectedTask() {
@@ -50,6 +52,18 @@ export default function SelectedTask() {
                 </p>
               </div>
             </div>
+          </div>
+          <FindTaskTaskInfoCard data={currentTaskData} />
+          <button className="btn btn-purple-filled click-on-task-button">
+            Откликнуться
+          </button>
+          <h3 className="other-task-title">Другие задания в категории</h3>
+          <div className="other-tasks-cards-wrapper">
+            {FIND_TASK_MAIN_CONTENT_FAKE_DATA.map((elem) => (
+              <div className="task-card" key={elem.id}>
+                <Card data={elem} />
+              </div>
+            ))}
           </div>
         </div>
       </div>
