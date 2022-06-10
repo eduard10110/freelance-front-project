@@ -41,7 +41,7 @@ export default function ContractCard() {
           </div>
         </div>
         <div className="contract-card-person-view-more">
-          <button className="btn btn-default">Смотреть профиль</button>
+          <button className="btn btn-purple">Смотреть профиль</button>
         </div>
       </div>
       <div className="contract-card-heart2">
