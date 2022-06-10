@@ -2,6 +2,10 @@
     width: 100%;
     min-height: 150vh;
 
+    h2 {
+        max-width: 20rem
+    }
+
     .page-wrapper {
         width: 100%;
         background: url("../images//home-background-1.png") center no-repeat;
