@@ -1,4 +1,4 @@
-import girlWithComputerImage from "assets/images/girl-with-computer.png";
+import hands from "assets/images/love-with-hands.png";
 import ContractCard from "components/cards/contractCard";
 import React from "react";
 import Slider from "react-slick/lib/slider";
@@ -27,7 +27,10 @@ export default function HomeReviewsContainer() {
               </Slider>
             </div>
             <div className="love-with-hands-image-wrapper">
-              <div></div>
+              <div className="love-with-hands-content">
+                <div className="love-with-hands-bg"></div>
+                <img src={hands}/>
+              </div>
             </div>
           </div>
         </div>

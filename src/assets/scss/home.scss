@@ -115,21 +115,34 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                gap: 150px;
 
                 .love-with-hands-image-wrapper {
-                    width: 25rem;
-                    height: 23rem;
-                    border-radius: 180px;
-                    background: rgba(93, 255, 129, 0.29);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    div {
-                        width: 22rem;
-                        height: 20rem;
-                        background: url("../images/love-with-hands.png") center
-                            no-repeat;
+                    .love-with-hands-content {
+                        position: relative;
+                        top: 30px;
+                        width: 25rem;
+                        height: 23rem;
+                        .love-with-hands-bg {
+                            position: absolute;
+                            z-index: 1;
+                            width: 25rem;
+                            height: 23rem;
+                            border-radius: 180px;
+                            background: rgba(93, 255, 129, 0.7);
+                            filter: blur(174px);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        img {
+                            width: 348px;
+                            height: 253px;
+                            background: url("../images/love-with-hands.png")
+                                center no-repeat;
+                            position: absolute;
+                            z-index: 2;
+                        }
                     }
                 }
             }
@@ -190,25 +203,25 @@
                     width: 500px;
                 }
 
-                .love-with-hands-image-wrapper {
-                    width: 25rem;
-                    height: 23rem;
-                    border-radius: 180px;
-                    // background: rgba(93, 255, 129, 0.29);
-                    background: url("../images/ellipse-green.png") center
-                        no-repeat;
+                // .love-with-hands-image-wrapper {
+                //     width: 25rem;
+                //     height: 23rem;
+                //     border-radius: 180px;
+                //     // background: rgba(93, 255, 129, 0.29);
+                //     background: url("../images/ellipse-green.png") center
+                //         no-repeat;
 
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;
 
-                    div {
-                        width: 22rem;
-                        height: 20rem;
-                        background: url("../images/love-with-hands.png") center
-                            no-repeat;
-                    }
-                }
+                //     div {
+                //         width: 22rem;
+                //         height: 20rem;
+                //         background: url("../images/love-with-hands.png") center
+                //             no-repeat;
+                //     }
+                // }
             }
         }
     }
@@ -231,7 +244,6 @@
             background-image: url("../images/home-background-2.png");
             background-repeat: no-repeat;
             background-size: cover;
-            
         }
         .start-today-container {
             flex: 1;
