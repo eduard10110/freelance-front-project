@@ -51,4 +51,10 @@ export default [
     component: lazy(() => import("pages/popularQuestions")),
     props: {},
   },
+  {
+    path: routes.SELECTED_TASK,
+    exact: true,
+    component: lazy(() => import("pages/selectedTask")),
+    props: {},
+  },
 ];

@@ -55,6 +55,7 @@ export const POPULAR_QUESTIONS_DATA = [
 
 export const FIND_TASK_MAIN_CONTENT_FAKE_DATA = [
   {
+    id: 1,
     name: "Ремонт мойки из иску...",
     budget: "до 5 000 ₽",
     address: "улица Глазунова, 6, Казань",
@@ -65,6 +66,7 @@ export const FIND_TASK_MAIN_CONTENT_FAKE_DATA = [
     clicked: false,
   },
   {
+    id: 2,
     name: "Ремонт мойки из иску...",
     budget: "до 5 000 ₽",
     address: "улица Глазунова, 6, Казань",
@@ -75,6 +77,7 @@ export const FIND_TASK_MAIN_CONTENT_FAKE_DATA = [
     clicked: true,
   },
   {
+    id: 3,
     name: "Ремонт мойки из иску...",
     budget: "до 5 000 ₽",
     address: "улица Глазунова, 6, Казань",
@@ -85,6 +88,7 @@ export const FIND_TASK_MAIN_CONTENT_FAKE_DATA = [
     clicked: false,
   },
   {
+    id: 4,
     name: "Ремонт мойки из иску...",
     budget: "до 5 000 ₽",
     address: "улица Глазунова, 6, Казань",
@@ -95,6 +99,7 @@ export const FIND_TASK_MAIN_CONTENT_FAKE_DATA = [
     clicked: false,
   },
   {
+    id: 5,
     name: "Ремонт мойки из иску...",
     budget: "до 5 000 ₽",
     address: "улица Глазунова, 6, Казань",

@@ -8,4 +8,5 @@ export default {
   CONTACTS: "/contacts",
   SUPPORT: "/support",
   POPULAR_QUESTIONS: "/popularQuestion",
+  SELECTED_TASK: "/find-task/:taskId",
 };

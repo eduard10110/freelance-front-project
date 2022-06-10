@@ -1,9 +1,10 @@
 import React from "react";
 import cardIcon from "assets/images/task-card-icon.png";
 import PropTypes from "prop-types";
+import { useNavigate } from "react-router-dom";
 
-// texts will coming from props or from backend
 export default function Card({ data }) {
+  const navigate = useNavigate();
   const {
     name,
     budget,
@@ -13,6 +14,7 @@ export default function Card({ data }) {
     userName,
     comments,
     clicked,
+    id,
   } = data;
 
   const handleClickToTask = (e) => {
@@ -20,7 +22,9 @@ export default function Card({ data }) {
     alert("click");
   };
 
-  const handleClickToCard = () => alert("Card Click");
+  const handleClickToCard = () => {
+    return navigate(`/find-task/${id}`);
+  };
 
   return (
     <div onClick={handleClickToCard} className="card">
