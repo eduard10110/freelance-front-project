@@ -14,7 +14,11 @@ export default function Checkbox({
         className={checked ? "checkbox-checked" : "checkbox"}
       ></div>
       {label && (
-        <p className={labelClassName || "body3"} htmlFor={label}>
+        <p
+          onClick={handleCheckboxChange(id, !checked)}
+          className={labelClassName || "body3 cursor-pointer"}
+          htmlFor={label}
+        >
           {label}
         </p>
       )}

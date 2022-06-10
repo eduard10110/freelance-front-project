@@ -14,8 +14,16 @@ export default function Card({ data }) {
     comments,
     clicked,
   } = data;
+
+  const handleClickToTask = (e) => {
+    e.stopPropagation();
+    alert("click");
+  };
+
+  const handleClickToCard = () => alert("Card Click");
+
   return (
-    <div className="card">
+    <div onClick={handleClickToCard} className="card">
       <div className="card-avatar">
         <img src={cardIcon} alt="avatar" />
       </div>
@@ -34,7 +42,7 @@ export default function Card({ data }) {
       </div>
       <div className="card-order">
         <p>{budget}</p>
-        <button className="btn btn-purple">
+        <button onClick={handleClickToTask} className="btn btn-purple">
           {clicked ? "Отклик отправлен" : "Откликнуться"}
         </button>
       </div>
