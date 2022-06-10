@@ -3,9 +3,10 @@
     flex-direction: column;
     width: 407px;
     height: 368px;
-    background-color: $purple;
+    
     border-radius: 16px;
     padding: 32px;
+    
     .person-info {
         display: flex;
         justify-content: space-between;
@@ -44,4 +45,11 @@
             height: 50px;
         }
     }
+}
+
+.personal-card.gray {
+        background-color: RGB(239, 239, 239)
+}
+.personal-card.purple {
+    background-color: $light-purple;
 }
