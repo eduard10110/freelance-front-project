@@ -120,25 +120,25 @@
                 }
             }
         }
-        .service-steps-wrapper {
-            .step-item {
-                display: flex;
-                align-items: center;
-                opacity: 0.45;
-                margin-top: 2rem;
+    }
+    .service-steps-wrapper {
+        .step-item {
+            display: flex;
+            align-items: center;
+            opacity: 0.45;
+            margin-top: 2rem;
 
-                div {
-                    margin-left: 2rem;
-                    .body3 {
-                        margin-top: 1rem;
-                        width: 11rem;
-                    }
+            div {
+                margin-left: 2rem;
+                .body3 {
+                    margin-top: 1rem;
+                    width: 11rem;
                 }
             }
+        }
 
-            .step-item:hover {
-                opacity: 1;
-            }
+        .step-item:hover {
+            opacity: 1;
         }
     }
 
