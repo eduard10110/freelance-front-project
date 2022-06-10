@@ -39,13 +39,14 @@
       }
 
       input {
-        width: 5rem;
+        width: 511px;
       }
     }
   }
 
   .checkbox-section {
     display: flex;
+    align-items: center;
     text-align: center;
     margin-top: 1rem;
 

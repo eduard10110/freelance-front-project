@@ -7,4 +7,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 32px;
+}
+
+.task-info-wrapper {
+  display: flex;
+  margin-top: 32px;
+  p {
+    padding: 0 12px;
+  }
+  p:last-child {
+    border: none;
+  }
+  p:first-child {
+    color: $purple;
+    padding-left: 0;
+  }
+  p {
+    border-right: 1px solid $black;
+  }
 }
