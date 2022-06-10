@@ -87,7 +87,7 @@ export default function Registration() {
                     <p className="body3">Нажимая на кнопку, я соглашаюсь на <span className="body5">обработку персональных данных</span></p>
                 </div>
                 <div className="reg-actions">
-                    <button className="btn btn-default btn-reg body3">
+                    <button className="btn btn-purple btn-reg body3">
                     Зарегистрироваться
                     </button>
                     <p className="body3">или</p>

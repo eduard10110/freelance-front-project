@@ -92,7 +92,7 @@ export default function Login() {
                 </div>
                 <div className="login-actions">
                     <button
-                        className="btn btn-default btn-login body3"
+                        className="btn btn-purple btn-login body3"
                         onClick={handleLogin}
                     >
                         Войти
