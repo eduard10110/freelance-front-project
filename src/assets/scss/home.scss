@@ -1,418 +1,417 @@
 .home-container-wrapper {
+  width: 100%;
+  // min-height: 150vh;
+
+  h2 {
+    max-width: 20rem;
+  }
+
+  .page-wrapper {
     width: 100%;
-    // min-height: 150vh;
+    background: url("../images//home-background-1.png") 50% 0 no-repeat;
+    background-size: cover;
+    // height: 73.8vh;
 
-    h2 {
-        max-width: 20rem
-    }
+    .page {
+      display: flex;
+      justify-content: center;
+      position: relative;
 
-    .page-wrapper {
-        width: 100%;
-        background: url("../images//home-background-1.png") 50% 0 no-repeat;
-        background-size: cover;
-        // height: 73.8vh;
-
-        .page {
-            display: flex;
-            justify-content: center;
-            position: relative;
-
-            .images-wrapper {
-                display: flex;
-                margin-top: 4rem;
-
-                .girl-image {
-                    position: absolute;
-                    right: 0%;
-                    bottom: 3%;
-                }
-
-                .boy-image {
-                    position: absolute;
-                    background-color: rgba(93, 255, 129, 0.65);
-                    backdrop-filter: blur(12px);
-                    border-radius: 32px;
-                    overflow: hidden;
-                    box-shadow: 111px 125px 67px rgba(0, 0, 0, 0.01), 63px 70px 57px rgba(0, 0, 0, 0.05), 28px 31px 42px rgba(0, 0, 0, 0.09), 7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
-                    right: 26%;
-                    top: 1.7%;
-                }
-            }
-        }
-
-        .content-wrapper {
-            width: 950px;
-        }
-    }
-
-    .first-container-wrapper {
-        width: 100%;
-        height: 73.8vh;
+      .images-wrapper {
         display: flex;
-        align-items: center;
-        position: relative;
-        h1 {
-            text-transform: uppercase;
-        }
-        p {
-            width: 30rem;
-        }
-        .buttons-container {
-            width: 22.5rem;
-            display: flex;
-            justify-content: space-between;
-            margin-top: 3rem;
-
-            .btn {
-                padding: 0 1rem 0 1rem;
-            }
-        }
-    }
-
-    .how-works-service-container-wrapper {
-        width: 100%;
-        background-color: $hero-color;
-
-        .how-works-service-container {
-            display: flex;
-            justify-content: center;
-
-            .content-wrapper {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                // height: 90vh;
-                width: 950px;
-            }
-        }
-    }
-
-    h2 {
-        text-transform: uppercase;
-        // width: 3rem;
-    }
-
-    .reviews-container-wrapper {
-        width: 100%;
-        // min-height: 100vh;
-        margin: 4rem 0;
-
-        .reviews-container {
-            display: flex;
-            justify-content: center;
-            .content-wrapper {
-                width: 950px;
-            }
-            h2 {
-                text-transform: uppercase;
-            }
-            .reviews-inner {
-                margin-top: 5rem;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                .love-with-hands-image-wrapper {
-                    width: 25rem;
-                    height: 23rem;
-                    border-radius: 180px;
-                    background: rgba(93, 255, 129, 0.29);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    div {
-                        width: 22rem;
-                        height: 20rem;
-                        background: url("../images/love-with-hands.png") center
-                            no-repeat;
-                    }
-                }
-            }
-        }
-    }
-    .service-steps-wrapper {
-        .step-item {
-            display: flex;
-            align-items: center;
-            opacity: 0.45;
-            margin-top: 2rem;
-
-            div {
-                margin-left: 2rem;
-                .body3 {
-                    margin-top: 1rem;
-                    width: 11rem;
-                }
-            }
-        }
-
-        .step-item:hover {
-            opacity: 1;
-        }
-    }
-
-    .categories-container-wrapper {
-        width: 100%;
-        height: 100vh;
-        background-color: $hero-color;
-        border-radius: 0 0 5rem 5rem;
-    }
-
-    .reviews-container-wrapper {
-        width: 100%;
-        // min-height: 100vh;
         margin-top: 4rem;
 
-        .reviews-container {
-            display: flex;
-            justify-content: center;
-
-            .content-wrapper {
-                width: 950px;
-            }
-
-            h2 {
-                text-transform: uppercase;
-            }
-
-            .reviews-inner {
-                margin-top: 5rem;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                .slider-wrapper {
-                    width: 500px;
-                }
-
-                .love-with-hands-image-wrapper {
-                    width: 25rem;
-                    height: 23rem;
-                    border-radius: 180px;
-                    // background: rgba(93, 255, 129, 0.29);
-                    background: url("../images/ellipse-green.png") center
-                        no-repeat;
-
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    div {
-                        width: 22rem;
-                        height: 20rem;
-                        background: url("../images/love-with-hands.png") center
-                            no-repeat;
-                    }
-                }
-            }
-        }
-    }
-    .start-today-container-wrapper {
-        width: 100%;
-        // height: 90vh;
-        display: flex;
-        min-height: 520px;
-        align-items: center;
-        justify-content: flex-end;
-        position: relative;
-        background: url("../images/home-background-2.png") center 100% no-repeat;
-        .start-today-container {
-            flex: 1;
-            max-width: 945px;
-            width: 100%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            z-index: 999;
-            h2 {
-                margin: 24px auto;
-            }
-            p {
-                margin-bottom: 48px;
-            }
-            .buttons-wrapper {
-                display: flex;
-                gap: 30px;
-                button {
-                    width: 182px;
-                    height: 50px;
-                }
-            }
-        }
-        .start-content-image {
-            // background: url('../images/girl-with-computer.png') no-repeat;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            bottom: 0;
+        .girl-image {
+          position: absolute;
+          right: 0%;
+          bottom: 3%;
         }
 
-    }
-
-    // .start-today-container {
-    //   width: 100%;
-    //   height: 65vh;
-    //   background: url("../images/home-background-2.png") center no-repeat;
-
-    //   .content-wrapper {
-    //     display: flex;
-    //     justify-content: center;
-
-    //     .girl-with-computer-image {
-    //       position: absolute;
-    //       bottom: 0%;
-    //       left: 0%;
-    //     }
-
-    //     .content-wrapper {
-    //       width: 950px;
-    //       position: relative;
-    //       display: flex;
-    //       justify-content: flex-end;
-    //       align-items: center;
-
-    //       .content {
-    //         z-index: 9999999999999;
-    //         margin-top: 8rem;
-    //       }
-
-    //       h2 {
-    //         text-transform: uppercase;
-    //         margin-bottom: 2rem;
-    //       }
-
-    //       .buttons-wrapper {
-    //         margin-top: 2rem;
-    //         width: 430px;
-    //         display: flex;
-    //         justify-content: space-between;
-    //         .btn {
-    //           padding: 0 3rem;
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
-
-    .category-content {
-        width: 100%;
-        background-color: $hero-color;
-        display: flex;
-        padding: 30px 0;
-        border-bottom-left-radius: 120px;
-        border-bottom-right-radius: 120px;
-    }
-
-    .categories-wrapper {
-        width: 100%;
-        display: flex;
-        background-color: $hero-color;
-        justify-content: center;
-        flex-direction: column;
-        padding: 50px 0;
-        margin: 30px 0;
-        border-bottom-left-radius: 120px;
-        border-bottom-right-radius: 120px;
-        h2 {
-            align-self: center;
-            text-transform: uppercase;
-            width: 945px;
-            margin: 30px 0;
-        }
-    }
-
-    .caregory-items-wrapper {
-        display: flex;
-        justify-content: center;
-        max-width: 1440px;
-        margin: 50px auto;
-        width: 100%;
-        padding: 0 90px;
-        gap: 30px;
-        // width: 80%;
-    }
-
-    .category-item {
-        border-radius: 16px;
-        background: #b2aae9;
-        box-shadow: 111px 125px 67px rgba(0, 0, 0, 0.01),
+        .boy-image {
+          position: absolute;
+          background-color: rgba(93, 255, 129, 0.65);
+          backdrop-filter: blur(12px);
+          border-radius: 32px;
+          overflow: hidden;
+          box-shadow: 111px 125px 67px rgba(0, 0, 0, 0.01),
             63px 70px 57px rgba(0, 0, 0, 0.05),
             28px 31px 42px rgba(0, 0, 0, 0.09), 7px 8px 23px rgba(0, 0, 0, 0.1),
             0px 0px 0px rgba(0, 0, 0, 0.1);
+          right: 26%;
+          top: 1.7%;
+        }
+      }
+    }
+
+    .content-wrapper {
+      width: 950px;
+    }
+  }
+
+  .first-container-wrapper {
+    width: 100%;
+    height: 73.8vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    h1 {
+      text-transform: uppercase;
+    }
+    p {
+      width: 30rem;
+    }
+    .buttons-container {
+      width: 22.5rem;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+
+      .btn {
+        padding: 0 1rem 0 1rem;
+      }
+    }
+  }
+
+  .how-works-service-container-wrapper {
+    width: 100%;
+    background-color: $hero-color;
+
+    .how-works-service-container {
+      display: flex;
+      justify-content: center;
+
+      .content-wrapper {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-        cursor: pointer;
-        &:hover {
-            background-color: rgba(93, 255, 129, 0.65);
+        // height: 90vh;
+        width: 950px;
+      }
+    }
+  }
+
+  h2 {
+    text-transform: uppercase;
+    // width: 3rem;
+  }
+
+  .reviews-container-wrapper {
+    width: 100%;
+    // min-height: 100vh;
+    margin: 4rem 0;
+
+    .reviews-container {
+      display: flex;
+      justify-content: center;
+      .content-wrapper {
+        width: 950px;
+      }
+      h2 {
+        text-transform: uppercase;
+      }
+      .reviews-inner {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .love-with-hands-image-wrapper {
+          width: 25rem;
+          height: 23rem;
+          border-radius: 180px;
+          background: rgba(93, 255, 129, 0.29);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          div {
+            width: 22rem;
+            height: 20rem;
+            background: url("../images/love-with-hands.png") center no-repeat;
+          }
         }
+      }
     }
+  }
+  .service-steps-wrapper {
+    .step-item {
+      display: flex;
+      align-items: center;
+      opacity: 0.45;
+      margin-top: 2rem;
 
-    .category-item-label {
-        position: absolute;
-        bottom: 25px;
-        padding: 0 32px;
-    }
-
-    .caregories-left-column {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        flex: 0 0 auto;
-        gap: 30px;
-    }
-    .caregories-right-column {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        flex: 0 0 auto;
-    }
-
-    .categories-right-top {
-        display: flex;
-        gap: 30px;
-    }
-    .categories-right-top-right {
-        display: flex;
-        gap: 30px;
-        flex: 0 0 auto;
-        flex-direction: column;
-        .category-item {
-            &:nth-child(2) {
-                transform: translate(-30px, 0);
-            }
+      div {
+        margin-left: 2rem;
+        .body3 {
+          margin-top: 1rem;
+          width: 11rem;
         }
-    }
-    .categories-right-top-left {
-        display: flex;
-        gap: 30px;
-        flex: 0 0 auto;
-        flex-direction: column;
-    }
-    .categories-right-bottom {
-        flex: 0 0 auto;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-    .categories-right-bottom-top {
-        flex: 0 0 auto;
-    }
-    .categories-right-bottom-bottom {
-        flex: 0 0 auto;
-        display: flex;
-        gap: 30px;
+      }
     }
 
-    .more-categories {
-        display: flex;
-        cursor: pointer;
-        justify-content: center;
-        margin: 48px 0 0 0;
+    .step-item:hover {
+      opacity: 1;
     }
+  }
+
+  .categories-container-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: $hero-color;
+    border-radius: 0 0 5rem 5rem;
+  }
+
+  .reviews-container-wrapper {
+    width: 100%;
+    // min-height: 100vh;
+    margin-top: 4rem;
+
+    .reviews-container {
+      display: flex;
+      justify-content: center;
+
+      .content-wrapper {
+        width: 950px;
+      }
+
+      h2 {
+        text-transform: uppercase;
+      }
+
+      .reviews-inner {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .slider-wrapper {
+          width: 500px;
+        }
+
+        .love-with-hands-image-wrapper {
+          width: 25rem;
+          height: 23rem;
+          border-radius: 180px;
+          // background: rgba(93, 255, 129, 0.29);
+          background: url("../images/ellipse-green.png") center no-repeat;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          div {
+            width: 22rem;
+            height: 20rem;
+            background: url("../images/love-with-hands.png") center no-repeat;
+          }
+        }
+      }
+    }
+  }
+  .start-today-container-wrapper {
+    width: 100%;
+    // height: 90vh;
+    display: flex;
+    min-height: 520px;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    background: url("../images/home-background-2.png") center 100% no-repeat;
+    background-size: contain;
+    .start-today-container {
+      flex: 1;
+      max-width: 945px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      z-index: 999;
+      h2 {
+        margin: 24px auto;
+      }
+      p {
+        margin-bottom: 48px;
+      }
+      .buttons-wrapper {
+        display: flex;
+        gap: 30px;
+        button {
+          width: 182px;
+          height: 50px;
+        }
+      }
+    }
+    .start-content-image {
+      // background: url('../images/girl-with-computer.png') no-repeat;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  // .start-today-container {
+  //   width: 100%;
+  //   height: 65vh;
+  //   background: url("../images/home-background-2.png") center no-repeat;
+
+  //   .content-wrapper {
+  //     display: flex;
+  //     justify-content: center;
+
+  //     .girl-with-computer-image {
+  //       position: absolute;
+  //       bottom: 0%;
+  //       left: 0%;
+  //     }
+
+  //     .content-wrapper {
+  //       width: 950px;
+  //       position: relative;
+  //       display: flex;
+  //       justify-content: flex-end;
+  //       align-items: center;
+
+  //       .content {
+  //         z-index: 9999999999999;
+  //         margin-top: 8rem;
+  //       }
+
+  //       h2 {
+  //         text-transform: uppercase;
+  //         margin-bottom: 2rem;
+  //       }
+
+  //       .buttons-wrapper {
+  //         margin-top: 2rem;
+  //         width: 430px;
+  //         display: flex;
+  //         justify-content: space-between;
+  //         .btn {
+  //           padding: 0 3rem;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  .category-content {
+    width: 100%;
+    background-color: $hero-color;
+    display: flex;
+    padding: 30px 0;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+  }
+
+  .categories-wrapper {
+    width: 100%;
+    display: flex;
+    background-color: $hero-color;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0;
+    margin: 30px 0;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    h2 {
+      align-self: center;
+      text-transform: uppercase;
+      width: 945px;
+      margin: 30px 0;
+    }
+  }
+
+  .caregory-items-wrapper {
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 50px auto;
+    width: 100%;
+    padding: 0 90px;
+    gap: 30px;
+    // width: 80%;
+  }
+
+  .category-item {
+    border-radius: 16px;
+    background: #b2aae9;
+    box-shadow: 111px 125px 67px rgba(0, 0, 0, 0.01),
+      63px 70px 57px rgba(0, 0, 0, 0.05), 28px 31px 42px rgba(0, 0, 0, 0.09),
+      7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(93, 255, 129, 0.65);
+    }
+  }
+
+  .category-item-label {
+    position: absolute;
+    bottom: 25px;
+    padding: 0 32px;
+  }
+
+  .caregories-left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 0 0 auto;
+    gap: 30px;
+  }
+  .caregories-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 0 0 auto;
+  }
+
+  .categories-right-top {
+    display: flex;
+    gap: 30px;
+  }
+  .categories-right-top-right {
+    display: flex;
+    gap: 30px;
+    flex: 0 0 auto;
+    flex-direction: column;
+    .category-item {
+      &:nth-child(2) {
+        transform: translate(-30px, 0);
+      }
+    }
+  }
+  .categories-right-top-left {
+    display: flex;
+    gap: 30px;
+    flex: 0 0 auto;
+    flex-direction: column;
+  }
+  .categories-right-bottom {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .categories-right-bottom-top {
+    flex: 0 0 auto;
+  }
+  .categories-right-bottom-bottom {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 30px;
+  }
+
+  .more-categories {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    margin: 48px 0 0 0;
+  }
 }

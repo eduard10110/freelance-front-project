@@ -2,6 +2,7 @@
 import { FIND_TASK_MAIN_CONTENT_FAKE_DATA } from "helpers/constants";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import ordererPicture from "assets/images/find-task-orderer-picture.png";
 
 //the data must be dynamic
 export default function SelectedTask() {
@@ -30,6 +31,25 @@ export default function SelectedTask() {
             <p className="body4">1 просмотр</p>
             <p className="body4">Создано 1 ч. 20 мин. назад</p>
             <p className="body4">Сантехнические работы</p>
+          </div>
+          <div className="orderer-wrapper">
+            <p className="body1">Заказчик</p>
+            <div className="orderer-info">
+              <img
+                src={ordererPicture}
+                alt={ordererPicture}
+                className="orderer-picture"
+              />
+              <div className="personal-info-wrapper">
+                <div className="personal-info-wrapper-inner">
+                  <p className="body1 btn-td-underline">Иван И.</p>
+                  <p className="body3 personal-info">36 лет, Санкт-Петербург</p>
+                </div>
+                <p className="btn-td-underline cursor-pointer body3">
+                  Отзывы: 12
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
