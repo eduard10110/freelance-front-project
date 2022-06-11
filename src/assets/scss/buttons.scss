@@ -23,12 +23,14 @@
 }
 
 .btn-purple-filled-active {
-  padding: 1rem;
+  // padding: 1rem;
   background-color: $purple;
-  border: 2px;
+  // border: 2px;
   color: $green;
   box-shadow: 0.01rem 0.01rem 1rem 0.2rem $green;
 }
+
+
 
 .btn-filled-disabled {
   background-color: $light-gray;
@@ -85,4 +87,10 @@
 
 .btn-td-underline {
   text-decoration: underline;
+}
+
+.btn-green-active {
+  background: #5DFF81;
+  box-shadow: 0px 0px 11px #6B59B3;
+  border: none;
 }

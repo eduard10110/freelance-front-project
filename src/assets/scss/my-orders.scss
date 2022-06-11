@@ -1,0 +1,40 @@
+.my-orders-page-wrapper {
+    margin-top: 30px;
+    .my-orders-container-title {
+        margin: 40px 0;
+    }
+}
+
+.my-orders-type {
+    margin: 40px 0;
+    display: flex;
+    gap: 23px;
+    button {
+        width: 179px;
+        height: 50px;
+    }
+}
+
+.my-orders-info {
+    margin: 8px 0 30px 0;
+    .my-order-info-title {
+        font-size: 22px;
+    }
+    .order-tasks-info {
+        margin: 24px 0 12px 0;
+        display: flex;
+        gap: 40px;
+        p {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .order-task-active {
+            color: $purple;
+        }
+    }
+}
+
+.my-orders-main-content-wrapper {
+    margin: 40px 0;
+    display: flex;
+}
