@@ -1,0 +1,61 @@
+.find-task-task-info-card-wrapper {
+  margin-top: 50px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.task-info-card-item {
+  display: flex;
+  min-height: 75px;
+  border-bottom: 2px solid rgba(221, 221, 221, 1);
+
+  .task-info-card-item-title-last {
+    border-radius: 0 0 0 12px;
+  }
+
+  .task-info-card-item-description-last {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 12px 0;
+
+    img {
+      margin-left: 40px;
+      margin-top: 25px;
+      width: 97px;
+      height: 80px;
+      margin-top: 66px;
+      margin-bottom: 40px;
+    }
+  }
+}
+.task-info-card-item-last {
+  border: none;
+}
+.task-info-card-item-title-first {
+  border-radius: 12px 0 0 0;
+}
+
+.task-info-card-item-description-first {
+  border-radius: 0 12px 0 0;
+}
+
+.task-info-card-item-title {
+  width: 250px;
+  background-color: $light-purple;
+
+  p {
+    margin-left: 32px;
+    margin-top: 25px;
+  }
+}
+
+.task-info-card-item-description {
+  width: 700px;
+  background-color: #f9f7ff;
+
+  p {
+    margin-left: 48px;
+    padding-top: 27px;
+  }
+}
