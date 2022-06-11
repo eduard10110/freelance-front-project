@@ -1,4 +1,5 @@
 import Card from "components/cards/card";
+import ClickOnTaskModal from "components/clickOnTaskModal";
 import { FIND_TASK_MAIN_CONTENT_FAKE_DATA } from "helpers/constants";
 import { findTaskMainContentFilters } from "helpers/enums";
 import React, { useState } from "react";
@@ -41,8 +42,8 @@ export default function FindTaskMainContent() {
       </div>
       <div className="tasks-wrapper">
         {FIND_TASK_MAIN_CONTENT_FAKE_DATA.map((elem, index) => (
-          <div className="task-card">
-            <Card data={elem} key={index} />
+          <div className="task-card" key={index}>
+            <Card data={elem} />
           </div>
         ))}
       </div>
