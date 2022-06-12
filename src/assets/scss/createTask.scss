@@ -1,0 +1,68 @@
+.create-task-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 156px;
+  padding-bottom: 188px;
+
+  h4 {
+    margin-top: 48px;
+  }
+}
+
+.create-task-task-name {
+  margin: 48px 0;
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 640px;
+    height: 52px;
+    margin-top: 24px;
+  }
+}
+
+.category-input-wrapper {
+  width: 640px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+
+  div {
+    input {
+      width: 264px;
+      margin-top: 24px;
+    }
+  }
+}
+
+.create-task-checkbox-wrapper-first {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.create-task-checkbox-wrapper {
+  display: flex;
+
+  .create-task-checkbox-label {
+    margin-left: 12px;
+    cursor: pointer;
+  }
+}
+
+.create-task-budget-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+}
+
+.create-task-budget-input {
+  margin-top: 24px;
+  width: 640px;
+  height: 52px;
+}
+
+.create-task-location-icon {
+  position: absolute;
+  //   bottom: 20%;
+  right: 3%;
+}

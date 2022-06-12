@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Checkbox from "components/checkbox";
 import locationIcon from "assets/images/find-task-filters-location-icon.png";
+import Checkbox from "components/checkbox";
+import PropTypes from "prop-types";
+import React from "react";
 
 export default function FindTaskFilters({ filtersState, setFiltersState }) {
   const handleChange = (id, payload) => (e) => {
