@@ -1,10 +1,16 @@
-import { LOGIN_MODAL, REGISTRATION_MODAL, USER_PARAMS } from "store/action-types/app";
+import {
+  LOGIN_MODAL,
+  NOTIFICATIONS_MODAL,
+  REGISTRATION_MODAL,
+  USER_PARAMS,
+} from "store/action-types/app";
 
 const initialState = {
   showLoginModal: false,
   showRegistrationModal: false,
+  notificationsModal: false,
   userParams: {
-    auth: false
+    auth: false,
   },
 };
 
@@ -15,20 +21,23 @@ export default function appReducer(state = initialState, action) {
     case LOGIN_MODAL: {
       return {
         ...state,
-        showLoginModal: payload
-      }
+        showLoginModal: payload,
+      };
     }
     case REGISTRATION_MODAL: {
       return {
         ...state,
-        showRegistrationModal: payload
-      }
+        showRegistrationModal: payload,
+      };
     }
     case USER_PARAMS: {
       return {
         ...state,
-        userParams: payload
-      }
+        userParams: payload,
+      };
+    }
+    case NOTIFICATIONS_MODAL: {
+      return { ...state, notificationsModal: payload };
     }
     default:
       return state;
