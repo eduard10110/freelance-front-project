@@ -7,6 +7,11 @@
   h4 {
     margin-top: 48px;
   }
+
+  .btn-purple-filled {
+    width: 200px;
+    height: 50px;
+  }
 }
 
 .create-task-task-name {
@@ -30,6 +35,7 @@
   div {
     input {
       width: 264px;
+      height: 52px;
       margin-top: 24px;
     }
   }
@@ -49,13 +55,13 @@
   }
 }
 
-.create-task-budget-info-wrapper {
+.create-task-address-info-wrapper {
   display: flex;
   flex-direction: column;
   margin-top: 48px;
 }
 
-.create-task-budget-input {
+.create-task-address-input {
   margin-top: 24px;
   width: 640px;
   height: 52px;
@@ -63,6 +69,48 @@
 
 .create-task-location-icon {
   position: absolute;
-  //   bottom: 20%;
+  bottom: 15%;
   right: 3%;
+}
+
+.create-task-date-inputs-wrapper {
+  margin-top: 48px;
+
+  input {
+    height: 58px;
+    margin-top: 24px;
+    width: 275px;
+  }
+}
+
+.create-task-date-inputs-wrapper {
+  display: flex;
+}
+
+.create-task-date-to-input-wrapper {
+  margin-left: 32.5px;
+}
+
+.create-task-budget-input-wrapper {
+  margin-top: 48px;
+
+  input {
+    margin-top: 24px;
+    width: 640px;
+  }
+}
+
+.create-task-task-description-wrapper {
+  margin-top: 48px;
+
+  textarea {
+    margin-top: 24px;
+    padding-top: 16px;
+    width: 640px;
+  }
+}
+
+.upload-image-button {
+  width: 140px;
+  margin: 28px 0 48px 0;
 }

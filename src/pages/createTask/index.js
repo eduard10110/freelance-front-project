@@ -6,6 +6,7 @@ export default function CreateTask() {
   const [inputsData, setInputsData] = useState({
     remoteCheckbox: false,
     onCurrentAddressCheckbox: false,
+    budgetFromFreelancer: false,
   });
 
   const handleChange = (id, payload) => () =>
@@ -55,11 +56,11 @@ export default function CreateTask() {
               />
             </div>
           </div>
-          <div className="create-task-budget-info-wrapper">
+          <div className="create-task-address-info-wrapper">
             <p className="body2">По какому адресу?</p>
             <div className="input-wrapper">
               <input
-                className="input create-task-budget-input"
+                className="input create-task-address-input"
                 placeholder="Город, улица, дом"
               />
               <img
@@ -69,6 +70,42 @@ export default function CreateTask() {
               />
             </div>
           </div>
+          <div className="create-task-date-inputs-wrapper">
+            <div className="create-task-date-inputs-wrapper-inner">
+              <p className="body2">Начало</p>
+              <input className="input" type="date" />
+            </div>
+            <div className="create-task-date-to-input-wrapper">
+              <p className="body2">Конец</p>
+              <input className="input" type="date" />
+            </div>
+          </div>
+          <div className="create-task-budget-input-wrapper">
+            <p className="body2">Бюджет</p>
+            <input
+              className="input"
+              placeholder="На какой бюджет вы расчитываете?"
+            />
+          </div>
+          <div className="create-task-checkbox-wrapper create-task-checkbox-wrapper-first">
+            <Checkbox
+              labelClassName="create-task-checkbox-label"
+              id="budgetFromFreelancer"
+              checked={inputsData.budgetFromFreelancer}
+              label="Не могу оценить стоимость заказа. Жду предложений от исполнителей."
+              handleCheckboxChange={handleChange}
+            />
+          </div>
+          <div className="create-task-task-description-wrapper">
+            <p className="body2">Подробное описание</p>
+            <textarea className="input" placeholder="Введите текст" />
+          </div>
+          <button className="btn-default body3 upload-image-button">
+            Добавить фото
+          </button>
+          <button className="btn btn-purple-filled body3">
+            Создать задание
+          </button>
         </div>
       </div>
     </div>
