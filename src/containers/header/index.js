@@ -4,6 +4,7 @@ import logo from "../../assets/images/logo.png";
 import { authNavLinks, navLinks } from "../../helpers/enums/navEnums";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import {
+  chatModalVisible,
   loginModalVisible,
   registrationModalVisible,
   setUserParams,
@@ -25,6 +26,10 @@ export default function Header() {
     dispatch(setUserParams({ auth: false }));
   };
 
+  const handleChatModalVisible = () => {
+    dispatch(chatModalVisible(true))
+  }
+
   return (
     <div className="header">
       <header>
@@ -32,12 +37,6 @@ export default function Header() {
           <Link to="/">
             <img src={logo} alt="logo" />
           </Link>
-          {/* <span className="exit">
-                    <i></i>
-                    <Link to="/" className="body3">
-                      Выйти
-                    </Link>
-                  </span> */}
         </div>
         <div className="nav">
           {auth
@@ -75,7 +74,7 @@ export default function Header() {
         ) : (
           <div className="auth-user-actions">
             <div className="notifications">
-              <span className="message-icon">
+              <span className="message-icon" onClick={handleChatModalVisible} role="presentation">
                 <i></i>
               </span>
               <span className="notification-icon">

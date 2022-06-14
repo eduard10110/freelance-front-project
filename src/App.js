@@ -5,12 +5,14 @@ import Header from "containers/header";
 import React from "react";
 import RouteBuilder from "routes";
 import {useSelector, shallowEqual} from 'react-redux';
-import {showLoginModalSelector, showRegistrationModalSelector} from 'store/selectors/app';
+import {showChatModal, showLoginModalSelector, showRegistrationModalSelector} from 'store/selectors/app';
+import Chat from "containers/chat";
 
 export default function App() {
 
   const loginModalVisible = useSelector(showLoginModalSelector, shallowEqual);
   const registrationModalVisible = useSelector(showRegistrationModalSelector, shallowEqual);
+  const chatModal = useSelector(showChatModal, shallowEqual);
 
 
   return (
@@ -19,6 +21,7 @@ export default function App() {
       <RouteBuilder />
       {loginModalVisible && <Login/>}
       {registrationModalVisible && <Registration/>}
+      {chatModal && <Chat/>}
       {/* <Footer /> */}
       <Footer />
     </div>
