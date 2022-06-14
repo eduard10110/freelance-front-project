@@ -3,6 +3,7 @@ import Notifications from "containers/notifications";
 import React from "react";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
+import routes from "routes/routes";
 import logo from "../../assets/images/logo.png";
 import { authNavLinks, navLinks } from "../../helpers/enums/navEnums";
 import {
@@ -116,7 +117,7 @@ export default function Header() {
                   </span>
                   <div className="profile-dropdown">
                     <span>
-                      <Link to="/" className="body3">
+                      <Link to={routes.MY_PROFILE} className="body3">
                         Профиль
                       </Link>
                     </span>
