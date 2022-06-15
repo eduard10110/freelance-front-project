@@ -1,8 +1,8 @@
-import Card from "components/cards/card";
+// import Card from "components/cards/card";
 import CategoriesCheckbox from "components/categoriesChackbox";
-import FindTaskFilters from "containers/findTaskFilters";
+// import FindTaskFilters from "containers/findTaskFilters";
 import FindTaskMainContent from "containers/findTaskMainContent";
-import { checkboxFakeData, MY_ORDERS_CARDS_FAKE_DATA } from "helpers/constants";
+import { checkboxFakeData } from "helpers/constants";
 
 import React, { useState } from "react";
 

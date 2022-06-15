@@ -1,13 +1,9 @@
-import {
-  LOGIN_MODAL,
-  NOTIFICATIONS_MODAL,
-  REGISTRATION_MODAL,
-  USER_PARAMS,
-} from "store/action-types/app";
+import * as actionTypes from "store/action-types/app";
 
 const initialState = {
   showLoginModal: false,
   showRegistrationModal: false,
+  showChatModal: false,
   notificationsModal: false,
   userParams: {
     auth: false,
@@ -18,25 +14,31 @@ export default function appReducer(state = initialState, action) {
   const { type, payload } = action;
 
   switch (type) {
-    case LOGIN_MODAL: {
+    case actionTypes.LOGIN_MODAL: {
       return {
         ...state,
         showLoginModal: payload,
       };
     }
-    case REGISTRATION_MODAL: {
+    case actionTypes.REGISTRATION_MODAL: {
       return {
         ...state,
         showRegistrationModal: payload,
       };
     }
-    case USER_PARAMS: {
+    case actionTypes.CHAT_MODAL: {
+      return {
+        ...state,
+        showChatModal: payload
+      }
+    }
+    case actionTypes.USER_PARAMS: {
       return {
         ...state,
         userParams: payload,
       };
     }
-    case NOTIFICATIONS_MODAL: {
+    case actionTypes.NOTIFICATIONS_MODAL: {
       return { ...state, notificationsModal: payload };
     }
     default:

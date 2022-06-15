@@ -110,3 +110,30 @@ export const FIND_TASK_MAIN_CONTENT_FAKE_DATA = [
     clicked: false,
   },
 ];
+
+export const CHAT_MEMBERS_FAKE_DATA = [
+  {
+    id: 1,
+    name: "Антон Афонин",
+    description: "Здравствуйте ! Хотел бы боле...",
+    image: "Anton.png"
+  },
+  {
+    id: 2,
+    name: "Алена Власова",
+    description: "Здравствуйте ! Хотел бы боле...",
+    image: "Alena.png"
+  },
+  {
+    id: 3,
+    name: "Кирилл Бойков",
+    description: "Здравствуйте ! Хотел бы боле...",
+    image: "Kirill.png"
+  },
+  {
+    id: 4,
+    name: "Анастасия Царева",
+    description: "Здравствуйте ! Хотел бы боле...",
+    image: "Anastasiya.png"
+  },
+]

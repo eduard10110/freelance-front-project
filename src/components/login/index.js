@@ -36,7 +36,6 @@ export default function Login() {
             border: "none",
             borderRadius: "16px",
             background: "rgb(238, 238, 239, 0.85)",
-            // "linear-gradient(109.46deg, rgba(255, 255, 255, 0.77) 1.57%, rgba(255, 255, 255, 0.8) 100%)",
             boxShadow:
                 "111px 125px 67px rgba(0, 0, 0, 0.01), 63px 70px 57px rgba(0, 0, 0, 0.05), 28px 31px 42px rgba(0, 0, 0, 0.09), 7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)",
         },

@@ -1,25 +1,32 @@
-import {
-  LOGIN_MODAL,
-  NOTIFICATIONS_MODAL,
-  REGISTRATION_MODAL,
-  USER_PARAMS,
-} from "store/action-types/app";
+import * as actionTypes from "store/action-types/app"
 
-export const loginModalVisible = (payload) => ({
-  type: LOGIN_MODAL,
-  payload,
-});
-export const registrationModalVisible = (payload) => ({
-  type: REGISTRATION_MODAL,
-  payload,
-});
-
-export const setUserParams = (payload) => ({
-  type: USER_PARAMS,
-  payload,
-});
+export const loginModalVisible = (payload) => {
+    return {
+        type: actionTypes.LOGIN_MODAL,
+        payload
+    }
+}
+export const registrationModalVisible = (payload) => {
+    return {
+        type: actionTypes.REGISTRATION_MODAL,
+        payload
+    }
+}
+export const chatModalVisible = (payload) => {
+    return {
+        type: actionTypes.CHAT_MODAL,
+        payload
+    }
+}
 
 export const notificationsModalVisible = (payload) => ({
-  type: NOTIFICATIONS_MODAL,
+  type: actionTypes.NOTIFICATIONS_MODAL,
   payload,
 });
+
+export const setUserParams = (payload) => {
+    return {
+        type: actionTypes.USER_PARAMS,
+        payload
+    }
+}
