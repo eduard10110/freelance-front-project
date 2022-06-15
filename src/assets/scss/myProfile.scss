@@ -68,3 +68,75 @@
   margin-top: 48px;
   margin-bottom: 32px;
 }
+
+.mp-work-examples {
+  display: flex;
+  margin-bottom: 48px;
+
+  img {
+    margin-right: 37px;
+  }
+
+  :last-child {
+    margin: 0;
+  }
+}
+
+.mp-upload-work-example {
+  width: 289px;
+  height: 289px;
+  cursor: pointer;
+  border-radius: 32px;
+  background: radial-gradient(
+    82.46% 82.46% at 50% 42.89%,
+    rgba(187, 170, 255, 0.65) 0%,
+    rgba(114, 79, 255, 0.65) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-example-category-item {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.work-example-subcategory-lasItem {
+  margin-top: 12px;
+  margin-bottom: 48px;
+}
+
+.star-rating-container-wrapper {
+  width: 603px;
+  height: 94px;
+  background-color: #b2aae9;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.mp-stars-wrapper {
+  margin-left: 42px;
+  img {
+    width: 30px;
+    margin-right: 11px;
+  }
+
+  :last-child {
+    margin: 0;
+  }
+}
+
+.green-hurt-1 {
+  position: absolute;
+  bottom: 10%;
+}
+
+.green-hurt-2 {
+  position: absolute;
+  right: 0%;
+  bottom: 25%;
+}

@@ -1,5 +1,12 @@
+import workExampleImage1 from "assets/images/my-profile-work-examples-1.png";
+import workExampleImage2 from "assets/images/my-profile-work-examples-2.png";
 import MyProfilePersonalInfo from "containers/myProfilePersonalInfo";
+import addButton from "assets/images/my-profile-work-examples-add-button.png";
+import ratingStar from "assets/images/rating-star.png";
 import React from "react";
+import MyProfileCommentsContainer from "containers/myProfileCommentsContainer";
+import greenHurt1 from "assets/images/my-profile-green-heart-1.png";
+import greenHurt2 from "assets/images/my-profile-green-heart-2.png";
 
 export default function MyProfile() {
   return (
@@ -27,8 +34,36 @@ export default function MyProfile() {
               Редактировать
             </button>
           </div>
+          <div className="mp-work-examples">
+            <img src={workExampleImage1} alt="my-profile-work-examples-1" />
+            <img src={workExampleImage2} alt="my-profile-work-examples-2" />
+            <div className="mp-upload-work-example">
+              <img src={addButton} alt="addButton" />
+            </div>
+          </div>
+          <p className="body2">Виды выполняемых работ</p>
+          <p className="body3 work-example-category-item btn-td-underline">
+            Ремонт и строительство
+          </p>
+          <p className="body3">Сантехнические работы</p>
+          <p className="body3 work-example-subcategory-lasItem">
+            Электромонтажные работы
+          </p>
+          <div className="star-rating-container-wrapper">
+            <p className="body2">Средняя оценка: 5.0</p>
+            <div className="mp-stars-wrapper">
+              <img src={ratingStar} alt="star" />
+              <img src={ratingStar} alt="star" />
+              <img src={ratingStar} alt="star" />
+              <img src={ratingStar} alt="star" />
+              <img src={ratingStar} alt="star" />
+            </div>
+          </div>
+          <MyProfileCommentsContainer />
         </div>
       </div>
+      <img src={greenHurt1} alt="green hurt" className="green-hurt-1" />
+      <img src={greenHurt2} alt="green hurt" className="green-hurt-2" />
     </div>
   );
 }
