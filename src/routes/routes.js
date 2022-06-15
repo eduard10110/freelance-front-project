@@ -9,4 +9,5 @@ export default {
   SUPPORT: "/support",
   POPULAR_QUESTIONS: "/popularQuestion",
   SELECTED_TASK: "/find-task/:taskId",
+  MY_PROFILE: "/myProfile",
 };

@@ -57,4 +57,10 @@ export default [
     component: lazy(() => import("pages/selectedTask")),
     props: {},
   },
+  {
+    path: routes.MY_PROFILE,
+    exact: true,
+    component: lazy(() => import("pages/myProfile")),
+    props: {},
+  },
 ];

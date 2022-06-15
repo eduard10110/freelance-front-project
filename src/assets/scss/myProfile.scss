@@ -1,0 +1,70 @@
+.my-profile-container-wrapper {
+  padding: 147px 0 143px 0;
+}
+
+.my-profile-personal-info-wrapper {
+  margin-top: 94px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-profile-personal-picture-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    margin-top: 24px;
+  }
+}
+
+.my-profile-name-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.mp-edit-button {
+  margin-left: 12px;
+  color: rgba(109, 109, 109, 1);
+}
+
+.my-profile-user-rating-container-wrapper {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 12px;
+
+  img {
+    width: 16px;
+    margin-left: 5px;
+    margin-right: 8px;
+  }
+}
+
+.mp-contacts-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 23px;
+}
+
+.mp-phone-mail-container-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+
+  p {
+    margin-left: 14px;
+  }
+}
+
+.mp-seen-history {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.mp-about-container-wrapper {
+  display: flex;
+  margin-top: 48px;
+  margin-bottom: 32px;
+}

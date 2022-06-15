@@ -4,8 +4,9 @@ const initialState = {
   showLoginModal: false,
   showRegistrationModal: false,
   showChatModal: false,
+  notificationsModal: false,
   userParams: {
-    auth: false
+    auth: false,
   },
 };
 
@@ -16,14 +17,14 @@ export default function appReducer(state = initialState, action) {
     case actionTypes.LOGIN_MODAL: {
       return {
         ...state,
-        showLoginModal: payload
-      }
+        showLoginModal: payload,
+      };
     }
     case actionTypes.REGISTRATION_MODAL: {
       return {
         ...state,
-        showRegistrationModal: payload
-      }
+        showRegistrationModal: payload,
+      };
     }
     case actionTypes.CHAT_MODAL: {
       return {
@@ -34,8 +35,11 @@ export default function appReducer(state = initialState, action) {
     case actionTypes.USER_PARAMS: {
       return {
         ...state,
-        userParams: payload
-      }
+        userParams: payload,
+      };
+    }
+    case actionTypes.NOTIFICATIONS_MODAL: {
+      return { ...state, notificationsModal: payload };
     }
     default:
       return state;

@@ -19,6 +19,11 @@ export const chatModalVisible = (payload) => {
     }
 }
 
+export const notificationsModalVisible = (payload) => ({
+  type: actionTypes.NOTIFICATIONS_MODAL,
+  payload,
+});
+
 export const setUserParams = (payload) => {
     return {
         type: actionTypes.USER_PARAMS,
