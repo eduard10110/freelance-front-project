@@ -440,3 +440,13 @@
     margin: 48px 0 0 0;
   }
 }
+
+
+@media screen and (max-width: 1920px) and (min-width: 1500px) {
+  .start-today-container-wrapper {
+    height: 650px;
+  }
+  .start-today-container {
+    max-width: 60%;
+  }
+}
