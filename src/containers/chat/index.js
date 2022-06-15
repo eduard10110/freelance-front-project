@@ -1,30 +1,17 @@
 import ChatMembers from "components/chatMembers";
 import ChatMessage from "components/chatMessage";
 import ModalComponent from "components/modal";
-import React from "react";
+import React, { useState } from "react";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
-import {
-    loginModalVisible,
-    registrationModalVisible,
-    setUserParams,
-} from "store/action-creators/app";
+import { loginModalVisible, setUserParams } from "store/action-creators/app";
 import { showChatModal } from "store/selectors/app";
 
 export default function Chat() {
+    const [selectedMember, setSelectedMember] = useState(null);
     const modalVisible = useSelector(showChatModal, shallowEqual);
     const dispatch = useDispatch();
 
     const handleCloseModalVisible = () => {
-        dispatch(loginModalVisible(false));
-    };
-
-    const handleOpenRegistrationModal = () => {
-        dispatch(loginModalVisible(false));
-        dispatch(registrationModalVisible(true));
-    };
-
-    const handleLogin = () => {
-        dispatch(setUserParams({ auth: true }));
         dispatch(loginModalVisible(false));
     };
 
@@ -51,8 +38,8 @@ export default function Chat() {
             onRequestClose={handleCloseModalVisible}
         >
             <div className="chat-wrapper">
-                    <ChatMembers/>
-                    <ChatMessage/>
+                <ChatMembers setSelectedMember={setSelectedMember}/>
+                <ChatMessage selectedMember={selectedMember}/>
             </div>
         </ModalComponent>
     );

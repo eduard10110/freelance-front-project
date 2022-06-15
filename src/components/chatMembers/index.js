@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import chatPerformers from "../../assets/images/chat-performers.png";
 import chatCustomers from "../../assets/images/chat-customers.png";
 import { CHAT_MEMBERS_FAKE_DATA } from "../../helpers/constants";
 
-export default function ChatMembers() {
+export default function ChatMembers({ setSelectedMember }) {
+    const [memberId, setMemberId] = useState(null);
+
+    const handleselectedMember = (id) => () => {
+        setSelectedMember(id);
+        setMemberId(id);
+    };
 
     return (
         <div className="chat-members-wrapper">
@@ -26,18 +32,27 @@ export default function ChatMembers() {
                 </div>
             </div>
             <div className="chat-members">
-            <div className="members-title body3">Заказчики</div>
+                <div className="members-title body3">Заказчики</div>
                 {CHAT_MEMBERS_FAKE_DATA.map((member) => (
-                    <div className="chat-member" key={member.id}>
+                    <div
+                        className={`chat-member ${
+                            memberId === member.id ? "active-member" : ""
+                        }`}
+                        key={member.id}
+                        onClick={handleselectedMember(member.id)}
+                    >
                         <div>
-                            <img src={require(`../../assets/images/members/${member.image}`)} alt="avatar" />
+                            <img
+                                src={require(`../../assets/images/members/${member.image}`)}
+                                alt="avatar"
+                            />
                         </div>
                         <div className="member-info">
                             <p className="body8">{member.name}</p>
                             <p className="body3">{member.description}</p>
                         </div>
                         <span>
-                          <i></i>
+                            <i></i>
                         </span>
                     </div>
                 ))}
