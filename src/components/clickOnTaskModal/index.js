@@ -2,6 +2,7 @@ import ModalComponent from "components/modal";
 import React, { useState } from "react";
 import ordererPicture from "assets/images/find-task-orderer-picture.png";
 import closeButtonIcon from "assets/images/close-button.png";
+import SearchTaskSuccessModal from "components/searchTaskSuccessModal";
 
 const customStyles = {
   content: {
@@ -21,6 +22,7 @@ const customStyles = {
 
 //the data must be dynamic
 export default function ClickOnTaskModal({ isOpen, data, handleClose }) {
+  const [successModalOpened, setSuccessModalOpened] = useState(false);
   const [inputsValue, setInputsValue] = useState({
     comment: "",
     budget: "",
@@ -29,7 +31,22 @@ export default function ClickOnTaskModal({ isOpen, data, handleClose }) {
   const handleChange = (id) => (e) =>
     setInputsValue({ ...inputsValue, [id]: e.target.value });
 
-  return (
+  const handleCloseSuccessModal = () => setSuccessModalOpened(false);
+
+  const handleOpenSuccessModal = () => {
+    setSuccessModalOpened(true);
+  };
+
+  const handleSubmit = () => {
+    handleOpenSuccessModal();
+  };
+
+  return successModalOpened ? (
+    <SearchTaskSuccessModal
+      visible={successModalOpened}
+      handleClose={handleCloseSuccessModal}
+    />
+  ) : (
     <ModalComponent isOpen={isOpen} customStyles={customStyles}>
       <img
         onClick={handleClose}
@@ -84,7 +101,10 @@ export default function ClickOnTaskModal({ isOpen, data, handleClose }) {
             <p className="total-cost-description body4">
               С учетом комиссии Onlinejobx
             </p>
-            <button className="btn btn-purple-filled modal-task-click-button">
+            <button
+              onClick={handleSubmit}
+              className="btn btn-purple-filled modal-task-click-button"
+            >
               Откликнуться
             </button>
           </div>

@@ -1,0 +1,30 @@
+.st-success-modal-wrapper {
+  padding: 16px 19px;
+  position: relative;
+}
+
+.st-close-button {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  cursor: pointer;
+}
+
+.st-success-modal-inner {
+  margin-top: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  button {
+    margin-top: 24px;
+    width: 240px;
+    height: 50px;
+  }
+}
+
+.st-success-title {
+  margin-top: 36px;
+  margin-bottom: 24px;
+}
