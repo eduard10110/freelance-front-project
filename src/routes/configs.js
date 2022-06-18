@@ -28,6 +28,12 @@ export default [
     props: {},
   },
   {
+    path: routes.UNIQUE_PERFORMER,
+    exact: true,
+    component: lazy(() => import("pages/uniquePerformer")),
+    props: {},
+  },
+  {
     path: routes.MY_ORDERS,
     exact: true,
     component: lazy(() => import("pages/myOrders")),

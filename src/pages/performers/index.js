@@ -5,9 +5,9 @@ import { checkboxFakeData } from "helpers/constants";
 import React, { useState } from "react";
 
 const cards = [
-    { bgStyle: "gray" },
-    { bgStyle: "purple" },
-    { bgStyle: "purple" },
+    { id: 1 },
+    { id: 2 },
+    { id: 3 },
 ];
 
 export default function Performers() {
@@ -54,8 +54,8 @@ export default function Performers() {
                     <div className="performers-content-items">
                         <p className="body2 performers-content-title">Разработка ПО</p>
                         <div className="performers-task-card">
-                          {cards.map((card, index) => (
-                              <PersonalCard key={index} bgStyle={card.bgStyle} />
+                          {cards.map(card => (
+                              <PersonalCard key={card.id} id={card.id} />
                           ))}
                         </div>
                     </div>

@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import defaultPersonImage from "../../../assets/images/default-person.png";
+import personProfession from "../../../assets/images/icons/person-profession.svg";
 import ratingStar from "../../../assets/images/rating-star.png";
-export default function PersonalCard({ bgStyle }) {
+export default function PersonalCard({ id }) {
   return (
-    <div className={`personal-card ${bgStyle}`}>
+    <div className={`personal-card`}>
       <div className="person-info">
         <div className="avatar">
           <img src={defaultPersonImage} alt="avatar" />
@@ -22,7 +24,7 @@ export default function PersonalCard({ bgStyle }) {
           </p>
         </div>
         <div className="person-profession">
-          <img src="" alt="avatar" />
+          <img src={personProfession} alt="avatar" />
         </div>
       </div>
       <div className="person-bio-article">
@@ -34,7 +36,7 @@ export default function PersonalCard({ bgStyle }) {
         </p>
       </div>
       <div className="person-profile-button">
-        <button className="btn btn-purple">Смотреть профиль</button>
+        <button className="btn btn-purple"><Link to={`/performers/${id}`}>Смотреть профиль</Link></button>
       </div>
     </div>
   );

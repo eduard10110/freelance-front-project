@@ -1,0 +1,71 @@
+.works-slider {
+    width: 1000px;
+    margin: 0 auto;
+    .slick-slider {
+        width: 1000px;
+        height: 600px;
+        .slick-list {
+            width: 1000px;
+            height: 600px;
+            img {
+                width: 1000px;
+                height: 600px;
+            }
+        }
+    }
+}
+
+.works-slider .slick-arrow {
+    width: 100px;
+    height: 100px;
+    background: $purple;
+    border-radius: 50%;
+    z-index: 999;
+}
+.slick-next {
+    right: -20% !important;
+    &::before {
+        content: url("../images/icons/slider-arrow-right.svg") !important;
+    }
+    &:hover, &:focus {
+        background: $light-purple !important;
+    }
+}
+.slick-prev {
+    left: -20% !important;
+    &::before {
+        content: url('../images/icons/slider-arrow-left.svg') !important;
+    }
+    &:hover, &:focus {
+        background: $light-purple !important;
+    }
+}
+
+.slick-dots {
+    bottom: -60px !important;
+    .slick-active {
+        button {
+            background: $purple !important;
+        }
+    }
+    button {
+        width: 21px !important;
+        height: 21px !important;
+        background: $light-purple !important;
+        border-radius: 50%;
+        &::before {
+            content: "" !important;
+        }
+    }
+}
+
+
+
+.ReactModal__Content {
+    background: transparent !important;
+    z-index: 444;
+}
+
+.ReactModal__Overlay {
+    z-index: 4444;
+}
