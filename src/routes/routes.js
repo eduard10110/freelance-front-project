@@ -2,6 +2,7 @@
 export default {
   HOME: "/",
   CREATE_TASK: "/create-task",
+  CREATE_TASK_SUCCESS: "/create-task/success",
   FIND_TASK: "/find-task",
   PERFORMERS: "/performers",
   UNIQUE_PERFORMER: "/performers/:performerId",

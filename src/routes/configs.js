@@ -16,6 +16,12 @@ export default [
     props: {},
   },
   {
+    path: routes.CREATE_TASK_SUCCESS,
+    exact: true,
+    component: lazy(() => import("pages/createTaskSuccess")),
+    props: {},
+  },
+  {
     path: routes.FIND_TASK,
     exact: true,
     component: lazy(() => import("pages/findTask")),
