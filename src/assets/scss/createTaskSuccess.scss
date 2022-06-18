@@ -1,0 +1,21 @@
+.create-task-success-container-wrapper {
+  padding-bottom: 209px;
+  padding-top: 178px;
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 48px;
+  }
+}
+
+.cts-buttons-container-wrapper {
+  display: flex;
+
+  button {
+    width: 239px;
+    height: 50px;
+  }
+
+  :last-child {
+    margin-left: 25px;
+  }
+}

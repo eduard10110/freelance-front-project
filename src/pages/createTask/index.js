@@ -1,8 +1,11 @@
 import Checkbox from "components/checkbox";
 import React, { useState } from "react";
 import locationIcon from "assets/images/find-task-filters-location-icon.png";
+import { useNavigate } from "react-router-dom";
+import routes from "routes/routes";
 
 export default function CreateTask() {
+  const navigate = useNavigate();
   const [inputsData, setInputsData] = useState({
     remoteCheckbox: false,
     onCurrentAddressCheckbox: false,
@@ -11,6 +14,10 @@ export default function CreateTask() {
 
   const handleChange = (id, payload) => () =>
     setInputsData({ ...inputsData, [id]: payload });
+
+  const handleSubmit = () => {
+    navigate(routes.CREATE_TASK_SUCCESS);
+  };
 
   return (
     <div className="page-wrapper">
@@ -103,7 +110,10 @@ export default function CreateTask() {
           <button className="btn-default body3 upload-image-button">
             Добавить фото
           </button>
-          <button className="btn btn-purple-filled body3">
+          <button
+            onClick={handleSubmit}
+            className="btn btn-purple-filled body3"
+          >
             Создать задание
           </button>
         </div>
