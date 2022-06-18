@@ -35,9 +35,11 @@ export default function Login() {
             transform: "translate(-50%, -50%)",
             border: "none",
             borderRadius: "16px",
-            background: "rgb(238, 238, 239, 0.85)",
+            background:
+                "linear-gradient(109.46deg, rgba(255, 255, 255, 0.77) 1.57%, rgba(255, 255, 255, 0.8) 100%)",
             boxShadow:
                 "111px 125px 67px rgba(0, 0, 0, 0.01), 63px 70px 57px rgba(0, 0, 0, 0.05), 28px 31px 42px rgba(0, 0, 0, 0.09), 7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)",
+            backdropFilter: "blur(18.4988px)",
         },
     };
     return (
@@ -82,7 +84,7 @@ export default function Login() {
                 <div className="login-remember">
                     <label htmlFor="remember">
                         <label className="reg-checkbox-container">
-                            <input type="checkbox" id="remember"/>
+                            <input type="checkbox" id="remember" />
                             <span className="reg-checkmark"></span>
                         </label>
                         <p>Запомнить меня</p>
