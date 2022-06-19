@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import routes from "routes/routes";
+import girlImage from "assets/images/create-task-success-girl.png";
 
 export default function CreateTaskSuccess() {
   const navigate = useNavigate();
@@ -10,6 +11,7 @@ export default function CreateTaskSuccess() {
   return (
     <div className="page-wrapper">
       <div className="page">
+        <img src={girlImage} alt="girl" className="cts-girl-image" />
         <div className="content-wrapper create-task-success-container-wrapper">
           <h2>Ваше задание успешно опубликовано!</h2>
           <div className="cts-buttons-container-wrapper">

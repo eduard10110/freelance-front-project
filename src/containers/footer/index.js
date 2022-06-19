@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import routes from "routes/routes";
 
 export default function Footer() {
@@ -13,8 +13,6 @@ export default function Footer() {
 
   const handleDownloadFromHuaweiStore = () =>
     alert("download from Huawei store");
-
-  const handleNavigate = (path) => () => navigate(path);
 
   return (
     <footer className="footer-container-wrapper">
@@ -44,29 +42,26 @@ export default function Footer() {
           </div>
           <div className="for-workers-container-wrapper">
             <p className="body2">Для работодателей</p>
-            <p onClick={handleNavigate(routes.CREATE_TASK)} className="body3">
-              Создать задание
+            <p className="body3">
+              <Link to={routes.CREATE_TASK}>Создать задание</Link>
             </p>
           </div>
           <div className="for-workers-container-wrapper">
             <p className="body2">Для исполнителей</p>
-            <p onClick={handleNavigate(routes.FIND_TASK)} className="body3">
-              Найти задание
+            <p className="body3">
+              <Link to={routes.FIND_TASK}>Найти задание</Link>
             </p>
           </div>
           <div className="for-workers-container-wrapper">
             <p className="body2">Помощь</p>
-            <p onClick={handleNavigate(routes.CONTACTS)} className="body3">
-              Контакты
+            <p className="body3">
+              <Link to={routes.CONTACTS}>Контакты</Link>
             </p>
-            <p onClick={handleNavigate(routes.SUPPORT)} className="body3">
-              Служба поддержки
+            <p className="body3">
+              <Link to={routes.SUPPORT}>Служба поддержки</Link>
             </p>
-            <p
-              onClick={handleNavigate(routes.POPULAR_QUESTIONS)}
-              className="body3"
-            >
-              Частые вопросы
+            <p className="body3">
+              <Link to={routes.POPULAR_QUESTIONS}>Частые вопросы</Link>
             </p>
             <p className="body3">Как работает Сервис</p>
             <p className="body2 mt-2">Подписывайся</p>

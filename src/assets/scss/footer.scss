@@ -64,6 +64,11 @@
   .body3 {
     margin-top: 2rem;
     cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: $white;
+    }
   }
   .telegram-logo-wrapper {
     width: 33%;
