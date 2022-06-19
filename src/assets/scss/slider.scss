@@ -1,4 +1,12 @@
 .works-slider {
+    .ReactModal__Content {
+        background: transparent !important;
+        z-index: 444;
+    }
+    
+    .ReactModal__Overlay {
+        z-index: 4444;
+    }
     width: 1000px;
     margin: 0 auto;
     .slick-slider {
@@ -61,11 +69,3 @@
 
 
 
-.ReactModal__Content {
-    background: transparent !important;
-    z-index: 444;
-}
-
-.ReactModal__Overlay {
-    z-index: 4444;
-}

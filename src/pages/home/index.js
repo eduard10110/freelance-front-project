@@ -1,3 +1,4 @@
+import TaskCard from "components/cards/taskCard";
 import HomeCategoriesContainer from "containers/homeCategoriesContainer";
 import HomeFirstContainer from "containers/homeFirstContainer";
 import HomeHowWorkServiceContainer from "containers/homeHowWorkServiceContainer";
@@ -7,6 +8,7 @@ import StartTodayContainer from "containers/startTodayContainer";
 export default function Home() {
   return (
     <div className="home-container-wrapper">
+      {/* <TaskCard/> */}
       <HomeFirstContainer />
       <HomeHowWorkServiceContainer />
       <HomeCategoriesContainer />
