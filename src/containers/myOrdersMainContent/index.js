@@ -1,15 +1,24 @@
 import Card from "components/cards/card";
-import ClickOnTaskModal from "components/clickOnTaskModal";
 import { FIND_TASK_MAIN_CONTENT_FAKE_DATA } from "helpers/constants";
 import { findTaskMainContentFilters } from "helpers/enums";
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { setFindTaskFromOrders } from "store/action-creators/app";
 
 export default function FindTaskMainContent() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [activeFilter, setActiveFilter] = useState(
     findTaskMainContentFilters.byDate
   );
 
   const handleChangeMainContentFilter = (id) => () => setActiveFilter(id);
+
+  const onClickToCard = (id) => {
+    dispatch(setFindTaskFromOrders(true));
+    navigate(`/find-task/${id}`);
+  };
 
   return (
     <div className="my-orders-main-content">
@@ -43,7 +52,7 @@ export default function FindTaskMainContent() {
       <div className="tasks-wrapper">
         {FIND_TASK_MAIN_CONTENT_FAKE_DATA.map((elem, index) => (
           <div className="order-card" key={index}>
-            <Card data={elem} />
+            <Card data={elem} onClickToCard={onClickToCard} />
           </div>
         ))}
       </div>

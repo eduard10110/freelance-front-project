@@ -1,6 +1,7 @@
 import * as actionTypes from "store/action-types/app";
 
 const initialState = {
+  findTaskFromMyOrders: false,
   showLoginModal: false,
   showRegistrationModal: false,
   showChatModal: false,
@@ -29,8 +30,8 @@ export default function appReducer(state = initialState, action) {
     case actionTypes.CHAT_MODAL: {
       return {
         ...state,
-        showChatModal: payload
-      }
+        showChatModal: payload,
+      };
     }
     case actionTypes.USER_PARAMS: {
       return {
@@ -40,6 +41,9 @@ export default function appReducer(state = initialState, action) {
     }
     case actionTypes.NOTIFICATIONS_MODAL: {
       return { ...state, notificationsModal: payload };
+    }
+    case actionTypes.FIND_TASK_FROM_MY_ORDERS: {
+      return { ...state, findTaskFromMyOrders: payload };
     }
     default:
       return state;

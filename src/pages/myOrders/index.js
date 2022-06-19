@@ -1,5 +1,5 @@
 import CategoriesCheckbox from "components/categoriesChackbox";
-import FindTaskMainContent from "containers/findTaskMainContent";
+import FindTaskMainContent from "containers/myOrdersMainContent";
 import { checkboxFakeData } from "helpers/constants";
 import React, { useState } from "react";
 

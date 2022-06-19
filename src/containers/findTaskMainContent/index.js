@@ -1,5 +1,4 @@
 import Card from "components/cards/card";
-import ClickOnTaskModal from "components/clickOnTaskModal";
 import { FIND_TASK_MAIN_CONTENT_FAKE_DATA } from "helpers/constants";
 import { findTaskMainContentFilters } from "helpers/enums";
 import React, { useState } from "react";
