@@ -33,10 +33,11 @@
   margin-bottom: 48px;
 
   div {
-    input {
+    select {
       width: 264px;
       height: 52px;
       margin-top: 24px;
+      background-color: $white;
     }
   }
 }
@@ -48,6 +49,12 @@
 
 .create-task-checkbox-wrapper {
   display: flex;
+  align-items: center;
+
+  input {
+    width: 15px;
+    height: 15px;
+  }
 
   .create-task-checkbox-label {
     margin-left: 12px;

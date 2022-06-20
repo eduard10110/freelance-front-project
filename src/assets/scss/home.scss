@@ -372,8 +372,18 @@
     justify-content: center;
     position: relative;
     cursor: pointer;
+    transition: 300ms;
+
+    img {
+      opacity: 0.55;
+    }
+
     &:hover {
       background-color: rgba(93, 255, 129, 0.65);
+
+      img {
+        opacity: 1;
+      }
     }
   }
 
@@ -440,7 +450,6 @@
     margin: 48px 0 0 0;
   }
 }
-
 
 @media screen and (max-width: 1920px) and (min-width: 1500px) {
   .start-today-container-wrapper {

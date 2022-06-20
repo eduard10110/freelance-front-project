@@ -7,9 +7,8 @@ import routes from "routes/routes";
 export default function CreateTask() {
   const navigate = useNavigate();
   const [inputsData, setInputsData] = useState({
-    remoteCheckbox: false,
-    onCurrentAddressCheckbox: false,
     budgetFromFreelancer: false,
+    radioButtonValue: "remoteWork",
   });
 
   const handleChange = (id, payload) => () =>
@@ -18,6 +17,12 @@ export default function CreateTask() {
   const handleSubmit = () => {
     navigate(routes.CREATE_TASK_SUCCESS);
   };
+
+  const handleRadioButtonChange = (id) => (e) => {
+    setInputsData({ ...inputsData, radioButtonValue: id });
+  };
+
+  const checkRadioButtonsState = (id) => id === inputsData.radioButtonValue;
 
   return (
     <div className="page-wrapper">
@@ -35,32 +40,57 @@ export default function CreateTask() {
           <div className="category-input-wrapper">
             <div>
               <p className="body2">Категория</p>
-              <input placeholder="Выбрать категорию" className="input" />
+              {/* <input placeholder="Выбрать категорию" className="input" /> */}
+              <select className="input body3" defaultValue={"placeholder"}>
+                <option value="placeholder" disabled>
+                  Выбрать категорию
+                </option>
+                <option className="body3">Грузоперевозки</option>
+                <option className="body3">Дизайн</option>
+                <option className="body3">Компьютерная помощь</option>
+                <option className="body3">Красота и здоровье</option>
+                <option className="body3">Курьерские услуги</option>
+                <option className="body3">Ремонт и строительство</option>
+                <option className="body3">Ремонт транспорта</option>
+                <option className="body3">Репетиторы и обучение</option>
+                <option className="body3">Уборка и помощь по хозяйству</option>
+                <option className="body3">Установка и ремонт техники</option>
+                <option className="body3">
+                  Юридическая и бухгалтерская помощь
+                </option>
+              </select>
             </div>
             <div>
               <p className="body2">Подкатегория</p>
-              <input placeholder="Выбрать подкатегорию" className="input" />
+              {/* <input placeholder="Выбрать подкатегорию" className="input" /> */}
+              <select className="input">
+                <option value="" disabled selected>
+                  Выбрать подкатегорию
+                </option>
+              </select>
             </div>
           </div>
           <div className="create-task-address-input-wrapper">
             <p className="body2">Место оказания услуги</p>
             <div className="create-task-checkbox-wrapper create-task-checkbox-wrapper-first">
-              <Checkbox
-                labelClassName="create-task-checkbox-label"
-                id="remoteCheckbox"
-                checked={inputsData.remoteCheckbox}
-                label="Можно выполнить удаленно"
-                handleCheckboxChange={handleChange}
+              <input
+                type="radio"
+                checked={checkRadioButtonsState("remoteWork")}
+                onChange={handleRadioButtonChange("remoteWork")}
               />
+              <label className="create-task-checkbox-label">
+                Можно выполнить удаленно
+              </label>
             </div>
             <div className="create-task-checkbox-wrapper">
-              <Checkbox
-                labelClassName="create-task-checkbox-label"
-                id="onCurrentAddressCheckbox"
-                checked={inputsData.onCurrentAddressCheckbox}
-                handleCheckboxChange={handleChange}
-                label="Нужно присутствие по адресу"
+              <input
+                type="radio"
+                checked={checkRadioButtonsState("onCurrentAddress")}
+                onChange={handleRadioButtonChange("onCurrentAddress")}
               />
+              <label className="create-task-checkbox-label">
+                Нужно присутствие по адресу
+              </label>
             </div>
           </div>
           <div className="create-task-address-info-wrapper">
