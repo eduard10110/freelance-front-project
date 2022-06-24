@@ -11,7 +11,7 @@ import { useParams } from "react-router-dom";
 import { findTaskFromMyOrdersSelector } from "store/selectors/app";
 
 //the data must be dynamic
-export default function SelectedTask() {
+export default function SelectedTaskDesktop() {
   const fromMyOrders = useSelector(findTaskFromMyOrdersSelector, shallowEqual);
   const [currentTaskData, setCurrentTaskData] = useState();
   const [modalData, setModalData] = useState({ isOpen: false, data: null });
@@ -24,8 +24,6 @@ export default function SelectedTask() {
       setCurrentTaskData(currentData);
     }
   }, []);
-
-  console.log(fromMyOrders);
 
   const handleClickToTask = () => setModalData({ isOpen: true, data: {} });
 

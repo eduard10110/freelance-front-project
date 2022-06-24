@@ -8,7 +8,7 @@ import MyProfileCommentsContainer from "containers/myProfileCommentsContainer";
 import greenHurt1 from "assets/images/my-profile-green-heart-1.png";
 import greenHurt2 from "assets/images/my-profile-green-heart-2.png";
 
-export default function MyProfile() {
+export default function MyProfileDesktop() {
   return (
     <div className="page-wrapper">
       <div className="page">

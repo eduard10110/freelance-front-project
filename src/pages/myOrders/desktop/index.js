@@ -3,7 +3,7 @@ import FindTaskMainContent from "containers/myOrdersMainContent";
 import { checkboxFakeData } from "helpers/constants";
 import React, { useState } from "react";
 
-export default function MyOrder() {
+export default function MyOrderDesktop() {
   const [orderWorker, setOrderWorker] = useState(true);
 
   const [filters, setFilters] = useState({

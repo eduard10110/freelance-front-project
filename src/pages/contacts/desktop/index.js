@@ -1,7 +1,7 @@
 import React from "react";
 import { YMaps, Map, Placemark } from "react-yandex-maps";
 
-export default function Contacts() {
+export default function ContactsDesktop() {
   return (
     <div className="page-wrapper">
       <div className="page">

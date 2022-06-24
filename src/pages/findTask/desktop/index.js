@@ -4,7 +4,7 @@ import FindTaskMainContent from "containers/findTaskMainContent";
 import { checkboxFakeData } from "helpers/constants";
 import React, { useState } from "react";
 
-export default function FindTask() {
+export default function FindTaskDesktop() {
   const [filters, setFilters] = useState({
     remoteWork: false,
     tasksWithoutResponses: false,

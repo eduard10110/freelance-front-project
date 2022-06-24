@@ -2,7 +2,7 @@ import Checkbox from "components/checkbox";
 import SearchTaskSuccessModal from "components/searchTaskSuccessModal";
 import React, { useState } from "react";
 
-export default function Support() {
+export default function SupportDesktop() {
   const [successModalVisible, setSuccessModalVisible] = useState(false);
   const [data, setData] = useState({
     name: "",

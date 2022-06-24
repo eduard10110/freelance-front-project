@@ -4,7 +4,7 @@ import locationIcon from "assets/images/find-task-filters-location-icon.png";
 import { useNavigate } from "react-router-dom";
 import routes from "routes/routes";
 
-export default function CreateTask() {
+export default function CreateTaskDesktop() {
   const navigate = useNavigate();
   const [inputsData, setInputsData] = useState({
     budgetFromFreelancer: false,

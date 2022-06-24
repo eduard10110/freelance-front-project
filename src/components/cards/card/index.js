@@ -27,8 +27,6 @@ export default function Card({ data, onClickToCard }) {
     setModalData({ isOpen: true, data });
   };
 
-  console.log(onClickToCard);
-
   const handleClickToCard = () => {
     if (onClickToCard) {
       return onClickToCard(id);

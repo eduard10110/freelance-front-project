@@ -5,7 +5,7 @@ import closeQuestionIcon from "assets/images/close-question-icon.png";
 import { POPULAR_QUESTIONS_DATA } from "helpers/constants";
 import React, { useState } from "react";
 
-export default function PopularQuestions() {
+export default function PopularQuestionsDesktop() {
   const [openedQuestion, setOpenedQuestion] = useState(null);
 
   const handleOpen = (id) => () => setOpenedQuestion(id);
@@ -29,7 +29,12 @@ export default function PopularQuestions() {
           <h2 className="popular-questions-header">Популярные вопросы</h2>
           <div className="questions-wrapper">
             {POPULAR_QUESTIONS_DATA.map(({ label, answer }) => (
-              <div key={label} className={`question-item ${openedQuestion === label ? 'active' : ''}`}>
+              <div
+                key={label}
+                className={`question-item ${
+                  openedQuestion === label ? "active" : ""
+                }`}
+              >
                 <div className="question-container">
                   <h4>{label}</h4>
                   {openedQuestion === label ? (

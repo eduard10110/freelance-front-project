@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import routes from "routes/routes";
 import girlImage from "assets/images/create-task-success-girl.png";
 
-export default function CreateTaskSuccess() {
+export default function CreateTaskSuccessDesktop() {
   const navigate = useNavigate();
 
   const handleNavigateTo = (path) => () => navigate(path);
