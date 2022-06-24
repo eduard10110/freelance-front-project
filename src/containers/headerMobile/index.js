@@ -1,15 +1,14 @@
+import logo from "assets/images/logo.png";
 import React, { useState } from "react";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
-import { userParamsSelector } from "store/selectors/app";
-import { IoLogInOutline } from "react-icons/io5";
-import { BsFillPersonPlusFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import routes from "routes/routes";
-import logo from "assets/images/logo.png";
 import {
   loginModalVisible,
   registrationModalVisible,
+  setUserParams,
 } from "store/action-creators/app";
+import { userParamsSelector } from "store/selectors/app";
 
 export default function HeaderMobile() {
   const [menuOpened, setMenuOpened] = useState(false);
@@ -24,6 +23,10 @@ export default function HeaderMobile() {
   };
 
   const handleCheckboxChange = () => setMenuOpened(!menuOpened);
+
+  const handleLogout = () => {
+    dispatch(setUserParams({ auth: false }));
+  };
 
   return (
     <div className="header-mobile">
@@ -41,7 +44,28 @@ export default function HeaderMobile() {
 
           <ul className="menu__box">
             {auth ? (
-              <li></li>
+              <li>
+                <Link className="menu-item" to={routes.CREATE_TASK}>
+                  Создать задание
+                </Link>
+                <Link className="menu-item" to={routes.FIND_TASK}>
+                  Найти задание
+                </Link>
+                <Link className="menu-item" to={routes.PERFORMERS}>
+                  Исполнители
+                </Link>
+                <Link className="menu-item" to={routes.MY_ORDERS}>
+                  Мои заказы
+                </Link>
+                <Link className="menu-item" to={routes.MY_PROFILE}>
+                  Профиль
+                </Link>
+                <p className="menu-item">Тарифы</p>
+                <p className="menu-item">Настройки</p>
+                <p onClick={handleLogout} className="menu-item">
+                  Выйти
+                </p>
+              </li>
             ) : (
               <li>
                 <Link className="menu-item" to={routes.CREATE_TASK}>
@@ -61,7 +85,9 @@ export default function HeaderMobile() {
           </ul>
         </div>
       </div>
-      <img src={logo} alt="logo" />
+      <Link to="/">
+        <img src={logo} alt="logo" />
+      </Link>
     </div>
   );
 }

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
+import arrowOpen from "../../../assets/images/arrow-open.png";
 import contractCardHeart1 from "../../../assets/images/contract-card-heart1.png";
 import contractCardHeart2 from "../../../assets/images/contract-card-heart2.png";
-import ratingStar from "../../../assets/images/rating-star.png";
 import defaultPersonContract from "../../../assets/images/default-person-contract.png";
-import arrowOpen from "../../../assets/images/arrow-open.png";
+import ratingStar from "../../../assets/images/rating-star.png";
 
 export default function ContractCard() {
   return (

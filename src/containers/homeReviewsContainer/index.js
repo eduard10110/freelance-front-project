@@ -29,7 +29,7 @@ export default function HomeReviewsContainer() {
             <div className="love-with-hands-image-wrapper">
               <div className="love-with-hands-content">
                 <div className="love-with-hands-bg"></div>
-                <img src={hands}/>
+                <img src={hands} alt="hands" />
               </div>
             </div>
           </div>
