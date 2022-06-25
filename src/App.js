@@ -29,7 +29,7 @@ export default function App() {
       {loginModalVisible && <Login />}
       {registrationModalVisible && <Registration />}
       {chatModal && <Chat />}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

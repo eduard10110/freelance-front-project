@@ -1,10 +1,9 @@
 .header-mobile {
-  width: 100%;
   min-height: 5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px;
   position: relative;
 }
 
@@ -37,7 +36,7 @@
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 9999999999;
+  z-index: 999999;
 }
 .menu__btn > span,
 .menu__btn > span::before,

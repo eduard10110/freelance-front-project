@@ -1,5 +1,5 @@
-.categories-checkbox-wrapper {
-  width: 485px;
+.categories-checkbox-wrapper,
+.categories-checkbox-wrapper-mobile {
   .checkbox-item {
     display: flex;
 
@@ -18,18 +18,23 @@
       background: url("../images/radioButton-closed.png") center no-repeat;
     }
 
-    .body-1 {
+    .body-1,
+    .body3 {
       margin-left: 1rem;
       cursor: pointer;
     }
   }
 
   .subCategories-item {
-    margin-left: 4rem;
+    margin-left: 30px;
+  }
+
+  .subCategories-item-mobile {
+    max-width: 300px;
   }
 
   .subCategories-item-margin {
-    margin-left: 8rem;
+    margin-left: 90px;
   }
 }
 
@@ -52,4 +57,12 @@
 
 .checkbox-item {
   margin-bottom: 22px;
+}
+
+.categories-checkbox-wrapper-mobile {
+  max-width: 350px;
+}
+
+.categories-checkbox-wrapper {
+  width: 485px;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import SubCategoriesItem from "components/subCategoriesItem";
+import { isMobile } from "react-device-detect";
 
 export default function CategoriesCheckbox({ data, state, setState }) {
   const [radioButtonsState, setRadioButtonsState] = useState([1]);
@@ -15,7 +16,7 @@ export default function CategoriesCheckbox({ data, state, setState }) {
   };
 
   return (
-    <div className="categories-checkbox-wrapper">
+    <div className={isMobile ? "categories-checkbox-wrapper-mobile" :"categories-checkbox-wrapper"}>
       {data?.map((elem) => {
         const opened = radioButtonsState.some((item) => item === elem.id);
         return (
@@ -32,7 +33,13 @@ export default function CategoriesCheckbox({ data, state, setState }) {
                 const opened = radioButtonsState.some((id) => id === item.id);
                 return (
                   <div key={item.id}>
-                    <div className="subCategories-item">
+                    <div
+                      className={
+                        isMobile
+                          ? "subCategories-item-mobile"
+                          : "subCategories-item"
+                      }
+                    >
                       <SubCategoriesItem
                         handleRadioButtonChange={handleRadioButtonChange}
                         elem={item}

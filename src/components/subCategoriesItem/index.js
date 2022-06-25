@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { isMobile } from "react-device-detect";
 
 export default function SubCategoriesItem({
   elem,
@@ -34,7 +35,10 @@ export default function SubCategoriesItem({
           state?.some((elem) => elem === id) ? "checkbox-checked" : "checkbox"
         }
       ></div>
-      <p onClick={handleCheckboxChange(id)} className="body-1">
+      <p
+        onClick={handleCheckboxChange(id)}
+        className={isMobile ? "body3" : "body-1"}
+      >
         {label}
       </p>
     </div>
