@@ -16,8 +16,16 @@ const customStyles = {
   },
 };
 
-export default function FindTaskFiltersMobileModal({ open, data, onCancel }) {
+export default function FindTaskFiltersMobileModal({
+  open,
+  data,
+  onCancel,
+  setFiltersData,
+}) {
   const [filtersState, setFiltersState] = useState({ ...data });
+
+  const handleSubmit = () =>
+    setFiltersData({ open: false, data: filtersState });
 
   const handleChange = (id, payload) => (e) => {
     setFiltersState({ ...filtersState, [id]: payload || e.target.value });
@@ -85,8 +93,12 @@ export default function FindTaskFiltersMobileModal({ open, data, onCancel }) {
         data={checkboxFakeData}
       />
       <div className="ftm-buttons-wrapper">
-        <button className="btn btn-purple">Отменить</button>
-        <button className="btn btn-purple-filled">Применить</button>
+        <button onClick={onCancel(false)} className="btn btn-purple">
+          Отменить
+        </button>
+        <button onClick={handleSubmit} className="btn btn-purple-filled">
+          Применить
+        </button>
       </div>
     </ModalComponent>
   );

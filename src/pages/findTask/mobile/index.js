@@ -25,6 +25,7 @@ export default function FindTaskMobile() {
       {filtersData.open && (
         <FindTaskFiltersMobileModal
           onCancel={handleFiltersModalChange}
+          setFiltersData={setFiltersData}
           {...filtersData}
         />
       )}
