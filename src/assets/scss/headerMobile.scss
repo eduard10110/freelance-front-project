@@ -5,7 +5,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  position: relative;
+  position: fixed;
+  z-index: 99999;
+  background-color: $white;
 }
 
 .mh-login-icon {

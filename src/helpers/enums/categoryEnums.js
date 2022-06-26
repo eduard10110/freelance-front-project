@@ -13,47 +13,98 @@ import sale from "assets/images/categories/sale.png";
 import setting from "assets/images/categories/setting.png";
 
 export const categoriesEnum = {
-  leftColumn: [
-    { label: "Курьерские услуги", width: 295, height: 592, image: delivery },
-    { label: "Грузоперевозки", width: 397, height: 307, image: dron },
-    {
-      label: "Красота и здоровье",
-      width: 295,
-      height: 460,
-      image: beautyHealth,
-    },
-    { label: "Ремонт транспорта", width: 361, height: 344, image: car },
-  ],
-  rightTopColumnLeft: [
-    { label: "Разработка по", width: 383, height: 260, image: setting },
-    {
-      label: "Уборка и помощь по хозяйтсву",
-      width: 351,
-      height: 460,
-      image: cleaning,
-    },
-    {
-      label: "Репетиторы и обучение",
-      width: 381,
-      height: 342,
-      image: learning,
-    },
-  ],
-  rightTopColumnRight: [
-    { label: "Дизайн", width: 316, height: 371, image: ai },
-    { label: "Компьютерная помощь", width: 453, height: 344, image: computer },
-    { label: "Фото, Видео и аудио", width: 453, height: 344, image: photo },
-  ],
-  rightBottomColumnTop: [
-    {
-      label: "Юридическая и бухгалтерская помощь",
-      width: 638,
-      height: 307,
-      image: lower,
-    },
-  ],
-  rightBottomColumnBottom: [
-    { label: "Ремонт цифровой техники", width: 331, height: 460, image: robot },
-    { label: "Мероприятия и промоакции", width: 316, height: 371, image: sale },
-  ],
+    leftColumn: [
+        {
+            label: "Курьерские услуги",
+            width: 295,
+            height: 592,
+            image: delivery,
+        },
+        { label: "Грузоперевозки", width: 397, height: 307, image: dron },
+        {
+            label: "Красота и здоровье",
+            width: 295,
+            height: 460,
+            image: beautyHealth,
+        },
+        { label: "Ремонт транспорта", width: 361, height: 344, image: car },
+    ],
+    rightTopColumnLeft: [
+        { label: "Разработка по", width: 383, height: 260, image: setting },
+        {
+            label: "Уборка и помощь по хозяйтсву",
+            width: 351,
+            height: 460,
+            image: cleaning,
+        },
+        {
+            label: "Репетиторы и обучение",
+            width: 381,
+            height: 342,
+            image: learning,
+        },
+    ],
+    rightTopColumnRight: [
+        { label: "Дизайн", width: 316, height: 371, image: ai },
+        {
+            label: "Компьютерная помощь",
+            width: 453,
+            height: 344,
+            image: computer,
+        },
+        { label: "Фото, Видео и аудио", width: 453, height: 344, image: photo },
+    ],
+    rightBottomColumnTop: [
+        {
+            label: "Юридическая и бухгалтерская помощь",
+            width: 638,
+            height: 307,
+            image: lower,
+        },
+    ],
+    rightBottomColumnBottom: [
+        {
+            label: "Ремонт цифровой техники",
+            width: 331,
+            height: 460,
+            image: robot,
+        },
+        {
+            label: "Мероприятия и промоакции",
+            width: 316,
+            height: 371,
+            image: sale,
+        },
+    ],
 };
+
+export const mobileCategoriesEnum = [
+    { label: "Курьерские услуги", imageLeft: true, image: delivery },
+    { label: "Грузоперевозки", image: dron },
+    {
+        label: "Красота и здоровье",
+        imageLeft: true,
+        image: beautyHealth,
+    },
+    { label: "Ремонт транспорта", image: car },
+    { label: "Разработка по", imageLeft: true, image: setting },
+    {
+        label: "Уборка и помощь по хозяйтсву",
+        image: cleaning,
+    },
+    {
+        label: "Репетиторы и обучение",
+        imageLeft: true,
+        image: learning,
+    },
+    { label: "Дизайн", image: ai },
+    { label: "Компьютерная помощь", imageLeft: true, image: computer },
+    { label: "Фото, Видео и аудио", image: photo },
+    {
+        label: "Юридическая и бухгалтерская помощь",
+        imageLeft: true,
+        image: lower,
+    },
+    { label: "Ремонт цифровой техники", image: robot },
+    { label: "Мероприятия и промоакции", imageLeft: true, image: sale },
+];
