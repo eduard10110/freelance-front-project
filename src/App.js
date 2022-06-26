@@ -13,6 +13,7 @@ import {
 import Chat from "containers/chat";
 import { isMobile } from "react-device-detect";
 import HeaderMobile from "containers/headerMobile";
+import FooterMobile from "containers/mobile/footer";
 
 export default function App() {
   const loginModalVisible = useSelector(showLoginModalSelector, shallowEqual);
@@ -29,7 +30,7 @@ export default function App() {
       {loginModalVisible && <Login />}
       {registrationModalVisible && <Registration />}
       {chatModal && <Chat />}
-      {/* <Footer /> */}
+      {isMobile ? <FooterMobile /> : <Footer />}
     </div>
   );
 }

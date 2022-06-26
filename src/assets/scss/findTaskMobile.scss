@@ -1,3 +1,36 @@
 .findTask-filter-icon {
   width: 30px;
+  height: 30px;
+}
+
+.ftm-search-wrapper {
+  display: flex;
+  align-items: center;
+
+  button {
+    height: 30px;
+    margin-left: 20px;
+  }
+}
+
+.ftm-search-task-input {
+  height: 30px;
+  width: 160px;
+}
+
+.ftm-header-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ftm-main-content-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.ftm-wrapper {
+  padding: 20px 0;
 }

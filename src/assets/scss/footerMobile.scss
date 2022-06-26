@@ -1,0 +1,74 @@
+.footer-container-wrapper-mobile {
+  width: 100%;
+  padding: 30px;
+  position: relative;
+  background-color: $purple;
+}
+
+.radioButton {
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+}
+
+.radio-item-header {
+  margin-top: 20px;
+  display: flex;
+
+  :first-child {
+    margin-top: 0;
+  }
+
+  h5 {
+    margin-left: 10px;
+  }
+}
+
+.footer-subcategory-item {
+  color: $white;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+.fm-subcategories-wrapper {
+  margin-left: 8%;
+
+  .body4 {
+    margin-top: 10px;
+  }
+}
+
+.fm-from-app-store {
+  background: url("../images/download-from-app-store.png") center no-repeat;
+  width: 6.8rem;
+  height: 2rem;
+}
+
+.fm-from-google-play {
+  width: 7.5rem;
+  height: 2rem;
+  background: url("../images/download-from-google-play.png") center no-repeat;
+}
+
+.fm-download-from-container-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fm-download-from-container-wrapper2 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.from-huawei-store {
+  width: 9rem;
+  height: 2rem;
+  background: url("../images/download-from-huawei-store.png") center no-repeat;
+}
+
+.signature-wrapper {
+  margin-top: 20px;
+  color: $white;
+}
