@@ -1,0 +1,72 @@
+.ftm-card-wrapper {
+  box-sizing: border-box;
+  padding: 24px;
+  gap: 10px;
+  background: linear-gradient(109.46deg, #f0ecff 1.57%, #ffffff 100%);
+  box-shadow: 7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transition: background 300ms;
+  &:hover {
+    background: $light-purple;
+  }
+
+  .ftm-card {
+    //   width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+
+    button {
+      background-color: $light-purple;
+    }
+  }
+}
+
+.ftm-task-card {
+  margin-top: 30px;
+}
+
+.ftmtc-avatar {
+  width: 40px;
+}
+
+.ftmtc-card-details {
+  div {
+    margin-top: 20px;
+  }
+}
+
+.card-order {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  p {
+    width: 70px;
+    height: 20px;
+    text-align: right;
+  }
+  button {
+    width: 153px;
+    height: 50px;
+    align-self: flex-end;
+  }
+}
+
+.ftmtc-click-to-task-button {
+  width: 150px;
+  height: 30px;
+  align-self: flex-end;
+}
+
+.ftmtc-click-to-task-button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card-avatar {
+  width: 74px;
+  height: 74px;
+  border-radius: 10px;
+}

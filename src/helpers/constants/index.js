@@ -1,3 +1,5 @@
+import routes from "routes/routes";
+
 export const checkboxFakeData = [
   {
     label: "Все категории",
@@ -117,24 +119,47 @@ export const CHAT_MEMBERS_FAKE_DATA = [
     id: 1,
     name: "Антон Афонин",
     description: "Здравствуйте ! Хотел бы боле...",
-    image: "Anton.png"
+    image: "Anton.png",
   },
   {
     id: 2,
     name: "Алена Власова",
     description: "Здравствуйте ! Хотел бы боле...",
-    image: "Alena.png"
+    image: "Alena.png",
   },
   {
     id: 3,
     name: "Кирилл Бойков",
     description: "Здравствуйте ! Хотел бы боле...",
-    image: "Kirill.png"
+    image: "Kirill.png",
   },
   {
     id: 4,
     name: "Анастасия Царева",
     description: "Здравствуйте ! Хотел бы боле...",
-    image: "Anastasiya.png"
+    image: "Anastasiya.png",
   },
-]
+];
+
+export const FOOTER_DATA = [
+  {
+    id: 1,
+    title: "Для работодателей",
+    categories: [{ title: "Создать задание", path: routes.CREATE_TASK }],
+  },
+  {
+    id: 2,
+    title: "Для исполнителей",
+    categories: [{ title: "Найти задание", path: routes.FIND_TASK }],
+  },
+  {
+    id: 3,
+    title: "Помощь",
+    categories: [
+      { title: "Контакты", path: routes.CONTACTS },
+      { title: "Служба поддержки", path: routes.SUPPORT },
+      { title: "Частые вопросы", path: routes.POPULAR_QUESTIONS },
+      { title: "Как работает Сервис", path: routes.HOME },
+    ],
+  },
+];

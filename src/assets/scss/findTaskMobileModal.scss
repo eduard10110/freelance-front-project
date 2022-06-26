@@ -1,0 +1,24 @@
+.mobile-location-input-wrapper {
+  width: 250px;
+  position: relative;
+  margin: 20px 0;
+
+  input {
+    width: 230px;
+  }
+}
+
+.mobile-search-radius-input {
+  width: 230px;
+  margin-bottom: 20px;
+}
+
+.ftm-buttons-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  button {
+    width: 120px;
+  }
+}
