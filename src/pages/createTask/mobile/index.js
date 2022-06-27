@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import routes from "routes/routes";
 import locationIcon from "assets/images/find-task-filters-location-icon.png";
+import Checkbox from "components/checkbox";
 
 export default function CreateTaskMobile() {
   const navigate = useNavigate();
@@ -100,6 +101,49 @@ export default function CreateTaskMobile() {
                 className="create-task-location-icon"
               />
             </div>
+          </div>
+          <div className="ctm-subCategory-wrapper">
+            <p className="body2">Начало</p>
+            <input
+              className="input date-picker-input"
+              type="date"
+              placeholder={"hello"}
+            />
+          </div>
+          <div className="ctm-subCategory-wrapper">
+            <p className="body2">Конец</p>
+            <input className="input date-picker-input" type="date" />
+          </div>
+          <div className="ctm-budget-input-wrapper ctm-category-wrapper">
+            <p className="body2">Бюджет</p>
+            <input
+              className="input"
+              placeholder="На какой бюджет вы расчитываете?"
+            />
+          </div>
+          <div className="create-task-checkbox-wrapper create-task-checkbox-wrapper-first">
+            <Checkbox
+              labelClassName="create-task-checkbox-label"
+              id="budgetFromFreelancer"
+              checked={inputsData.budgetFromFreelancer}
+              label="Не могу оценить стоимость заказа. Жду предложений от исполнителей."
+              handleCheckboxChange={handleChange}
+            />
+          </div>
+          <div className="ctm-category-wrapper">
+            <p className="body2">Подробное описание</p>
+            <textarea className="input ctm-textarea" placeholder="Введите текст" />
+          </div>
+          <div className="ctm-buttons-wrapper">
+            <button className="btn-default body3 upload-image-button">
+              Добавить фото
+            </button>
+            <button
+              onClick={handleSubmit}
+              className="btn btn-purple-filled body3"
+            >
+              Создать задание
+            </button>
           </div>
         </div>
       </div>
