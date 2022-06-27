@@ -1,64 +1,64 @@
 // FIRST CONTAINER START
 
 .mobile-first-container-content {
-    display: flex;
-    position: relative;
-    // justify-content: space-between;
-    align-items: center;
-    // height: 500px;
-    padding: 10%;
-    margin-top: 5rem;
-    width: 100%;
-    background: url("../images/home-background-1.png") center center no-repeat;
-    background-size: cover;
+  display: flex;
+  position: relative;
+  // justify-content: space-between;
+  align-items: center;
+  // height: 500px;
+  padding: 10%;
+  margin-top: 5rem;
+  width: 100%;
+  background: url("../images/home-background-1.png") center center no-repeat;
+  background-size: cover;
 }
 
 .mobile-first-container-info {
-    max-width: 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 3% 0;
+  div {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 3% 0;
-    div {
-        display: flex;
-        gap: 5px;
-        button {
-            padding: 0;
-            min-width: 5.5rem;
-            min-height: 1.5rem;
-        }
+    gap: 5px;
+    button {
+      padding: 0;
+      min-width: 5.5rem;
+      min-height: 1.5rem;
     }
+  }
 }
 
 .mobile-first-container-images {
-    .mobile-boy-image {
-        width: 80px;
-        height: 80px;
-        position: absolute;
-        background-color: rgba(93, 255, 129, 0.65);
-        -webkit-backdrop-filter: blur(12px);
-        backdrop-filter: blur(12px);
-        border-radius: 15px;
-        overflow: hidden;
-        right: 25%;
-        top: 5%;
-        img {
-            width: 80px;
-            height: 80px;
-        }
+  .mobile-boy-image {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background-color: rgba(93, 255, 129, 0.65);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    overflow: hidden;
+    right: 25%;
+    top: 5%;
+    img {
+      width: 80px;
+      height: 80px;
     }
-    .mobile-girl-image {
-        position: absolute;
-        right: 0;
-        top: 20%;
-        width: 100%;
-        overflow: hidden;
-        display: flex;
-        justify-content: flex-end;
-        img {
-            max-width: 35%;
-        }
+  }
+  .mobile-girl-image {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    img {
+      max-width: 35%;
     }
+  }
 }
 
 // FIRST CONTSINER END
@@ -66,36 +66,36 @@
 // HOW VORKS SERVICE START
 
 .mobile-how-works-service-container-wrapper {
+  width: 100%;
+  background: $hero-color;
+  .content-wrapper {
     width: 100%;
-    background: $hero-color;
-    .content-wrapper {
-        width: 100%;
-        padding: 10%;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .service-steps-wrapper {
+      margin: 10% 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .step-item {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-        .service-steps-wrapper {
-            margin: 10% 0;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            .step-item {
-                display: flex;
-                align-items: center;
-                gap: 20px;
-                img {
-                    max-width: 80px;
-                    max-height: 80px;
-                }
-                div {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 5px;
-                }
-            }
+        gap: 20px;
+        img {
+          max-width: 80px;
+          max-height: 80px;
         }
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+        }
+      }
     }
+  }
 }
 
 // HOW VORKS SERVICE END
@@ -103,39 +103,39 @@
 // HOME CATEGORY START
 
 .mobile-category-content {
-    width: 100%;
-    background: $hero-color;
-    padding: 10%;
-    .caregories-left-column {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 10%;
-    }
-    .more-categories {
-        margin-top: 15%;
-        text-align: center;
-    }
+  width: 100%;
+  background: $hero-color;
+  padding: 10%;
+  .caregories-left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10%;
+  }
+  .more-categories {
+    margin-top: 15%;
+    text-align: center;
+  }
 }
 
 .mobile-category-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5%;
-    border-radius: 16px;
-    background: #b2aae9;
-    box-shadow: 111px 125px 67px rgba(0, 0, 0, 0.01),
-        63px 70px 57px rgba(0, 0, 0, 0.05), 28px 31px 42px rgba(0, 0, 0, 0.09),
-        7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+  border-radius: 16px;
+  background: #b2aae9;
+  box-shadow: 111px 125px 67px rgba(0, 0, 0, 0.01),
+    63px 70px 57px rgba(0, 0, 0, 0.05), 28px 31px 42px rgba(0, 0, 0, 0.09),
+    7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
 
-    img {
-        width: 70px;
-        height: 70px;
-    }
+  img {
+    width: 70px;
+    height: 70px;
+  }
 }
 .label-right {
-    text-align: right;
+  text-align: right;
 }
 
 // HOME CATEGORY END
@@ -143,19 +143,22 @@
 // REVIEW CONTAINER START
 
 .mobile-reviews-container-wrapper {
-    padding: 10%;
-    .reviews-container {
-        h4 {
-            margin: 2rem 0;
-        }
+  padding: 10%;
+  .reviews-container {
+    h4 {
+      margin: 2rem 0;
     }
-    .slick-dots {
-        bottom: -40px !important;
-        li button {
-            width: 15px !important;
-            height: 15px !important;
-        }
+  }
+  .slick-dots {
+    bottom: -40px !important;
+    li button {
+      width: 15px !important;
+      height: 15px !important;
     }
+  }
+  .slick-arrow {
+    display: none !important;
+  }
 }
 
 // REVIEW CONTAINER END
@@ -163,41 +166,41 @@
 // START TODAY CONTAINER START
 
 .mobile-start-today-container-wrapper {
-    width: 100%;
-    // height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-    // background-color: $hero-color;
-    padding: 10% 5% 10% 0;
-    margin-top: 5rem;
-    background-image: url("../images/home-background-2.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    .start-today-container {
-        .start-today-content {
-            p {
-                margin: 0.5rem 0;
-            }
-            .buttons-wrapper {
-                display: flex;
-                gap: 10px;
-                margin: 0.5rem 0;
-                button {
-                    min-height: 1rem;
-                    font-size: 12px;
-                }
-            }
+  width: 100%;
+  // height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  // background-color: $hero-color;
+  padding: 10% 5% 10% 0;
+  margin-top: 5rem;
+  background-image: url("../images/home-background-2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .start-today-container {
+    .start-today-content {
+      p {
+        margin: 0.5rem 0;
+      }
+      .buttons-wrapper {
+        display: flex;
+        gap: 10px;
+        margin: 0.5rem 0;
+        button {
+          min-height: 1rem;
+          font-size: 12px;
         }
+      }
     }
-    .start-content-image {
-        max-width: 50%;
-        img {
-            width: 100%;
-        }
+  }
+  .start-content-image {
+    max-width: 50%;
+    img {
+      width: 100%;
     }
+  }
 }
 
 // START TODAY CONTAINER END
