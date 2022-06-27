@@ -9,6 +9,7 @@
 
 .ctm-description {
   margin: 10px 0;
+  width: 250px;
 }
 
 .ctm-task-name {
@@ -57,4 +58,27 @@
 
 .ctm-address-input-wrapper {
   margin-top: 20px;
+}
+
+.date-picker-input {
+  width: 250px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.ctm-textarea {
+  height: 90px;
+  width: 250px;
+  margin-top: 10px;
+}
+
+.ctm-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+
+  button {
+    width: 150px;
+    height: 50px;
+  }
 }

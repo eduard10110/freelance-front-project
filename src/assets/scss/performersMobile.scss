@@ -1,0 +1,33 @@
+.pm-wrapper {
+  padding: 20px 0 0 0;
+}
+
+.pm-main-content-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.pm-filters-buttons-wrapper {
+  display: flex;
+}
+
+.pm-content-title {
+  margin: 20px 0;
+}
+
+.pm-content-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pm-task-card {
+  :last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.pfm-buttons-wrapper {
+  margin-bottom: 50px;
+}
