@@ -21,7 +21,6 @@ export default function FooterMobile() {
       <div className="page">
         <div className="content-wrapper-mobile footer-container-wrapper-mobile">
           {FOOTER_DATA.map(({ id, categories, title }) => {
-            console.log(categoryOpened === id);
             return (
               <div
                 className={`fm-radio-item ${

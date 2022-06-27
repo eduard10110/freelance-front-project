@@ -11,13 +11,13 @@
     justify-content: space-between;
     align-items: top;
     .avatar {
-      width: 80px;
-      height: 80px;
+      width: 86px;
+      height: 86px;
       border-radius: 32px;
 
       img {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
       }
     }
     .person-bio {
@@ -63,8 +63,8 @@
 }
 
 .person-profession-mobile {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   background-color: $purple;
   border-radius: 10px;
   display: flex;

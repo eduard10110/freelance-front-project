@@ -8,7 +8,6 @@
 .radioButton {
   width: 1rem;
   height: 1rem;
-  background-color: white;
 }
 
 .radio-item-header {
@@ -18,6 +17,10 @@
 
   :first-child {
     margin-top: 0;
+  }
+
+  div {
+    filter: brightness(10);
   }
 
   h5 {
