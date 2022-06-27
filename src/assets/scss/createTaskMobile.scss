@@ -1,0 +1,60 @@
+.ctm-wrapper {
+  padding: 10px 0;
+}
+
+.ctm-header {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.ctm-description {
+  margin: 10px 0;
+}
+
+.ctm-task-name {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 250px;
+    height: 40px;
+    margin-top: 10px;
+  }
+}
+
+.ctm-category-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  select,
+  input {
+    width: 250px;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  img {
+    margin-top: 10px;
+    position: relative;
+    right: 10%;
+  }
+}
+
+.ctm-subCategory-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  select {
+    width: 250px;
+    height: 40px;
+    margin-top: 10px;
+  }
+}
+
+.ctm-address-input-wrapper {
+  margin-top: 20px;
+}
