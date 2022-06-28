@@ -15,8 +15,8 @@ import { isMobile } from "react-device-detect";
 import HeaderMobile from "containers/headerMobile";
 import FooterMobile from "containers/mobile/footer";
 import MobileChat from "containers/mobileChat";
-import LoginMobile from "components/loginMobile";
-import RegistrationMobile from "components/registrstionMobile";
+import LoginMobile from "components/mobile/loginMobile";
+import RegistrationMobile from "components/mobile/registrstionMobile";
 
 export default function App() {
   const loginModalVisible = useSelector(showLoginModalSelector, shallowEqual);

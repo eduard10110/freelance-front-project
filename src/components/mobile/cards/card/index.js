@@ -56,7 +56,7 @@ export default function CardMobile({ data, onClickToCard }) {
             <p className="card-comments">{!comments && "Нет отзывов"}</p>
           </div>
         </div>
-        <div className="card-order">
+        <div className="mobile-card-order">
           <p className="body4">{budget}</p>
         </div>
       </div>
