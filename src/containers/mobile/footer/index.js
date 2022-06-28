@@ -37,7 +37,7 @@ export default function FooterMobile() {
                         : "radioButton-closed"
                     }`}
                   ></div>
-                  <h5>{title}</h5>
+                  <h5 onClick={handleOpenRadioItem(id)}>{title}</h5>
                 </div>
 
                 {categoryOpened === id && (

@@ -1,206 +1,235 @@
 .header {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  header {
+    height: 80px;
     display: flex;
-    justify-content: center;
-    header {
-        height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    width: 945px;
+    .nav {
+      min-width: 33rem;
+      display: flex;
+      justify-content: center;
+      margin-left: 1rem;
+      a {
+        text-decoration: none;
+      }
+      .nav-link {
+        margin-right: 24px;
+      }
+      .nav-link-auth {
+        margin-right: 12px;
+      }
+    }
+    .auth {
+      display: flex;
+      p {
+        cursor: pointer;
+      }
+      p,
+      span {
+        margin-left: 20px;
+      }
+    }
+    .auth-user-actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .notifications {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 945px;
-        .nav {
-            min-width: 33rem;
-            display: flex;
-            justify-content: center;
-            margin-left: 1rem;
-            a {
-                text-decoration: none;
-            }
-            .nav-link {
-                margin-right: 24px;
-            }
-            .nav-link-auth {
-                margin-right: 12px;
-            }
+        cursor: pointer;
+        span {
+          display: flex;
+          align-items: center;
+          margin-left: 0.5rem;
+          i {
+            width: 28px;
+            height: 28px;
+          }
         }
-        .auth {
-            display: flex;
+        .message-icon i {
+          background: url("../images/icons/message.svg") no-repeat;
+        }
+        .notification-icon {
+          padding-top: 0.4rem;
+          i {
+            background: url("../images/icons/notification.svg") no-repeat;
+          }
+        }
+      }
+      .header-personal-info {
+        display: flex;
+        margin-left: 0.3rem;
+        .header-user-currency,
+        .header-user-profile {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 48px;
+          height: 48px;
+          background-color: $light-purple;
+          border-radius: 10px;
+          margin-left: 0.4rem;
+          cursor: pointer;
+        }
+        .header-user-currency {
+          position: relative;
+          span:last-child {
+            margin-left: 0.1rem;
+          }
+          .header-currency-dropdown {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            z-index: 999;
+            top: 4rem;
+            right: 0;
+            width: 320px;
+            height: 280px;
+            border-radius: 24px;
+            padding: 1.5rem;
+            background: linear-gradient(
+              109.46deg,
+              rgba(255, 255, 255, 0.77) 1.57%,
+              rgba(255, 255, 255, 0.8) 100%
+            );
+            box-shadow: 111px 125px 67px rgba(0, 0, 0, 0.01),
+              63px 70px 57px rgba(0, 0, 0, 0.05),
+              28px 31px 42px rgba(0, 0, 0, 0.09),
+              7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1),
+              0px 12px 16px rgba(33, 33, 33, 0.04);
             p {
-                cursor: pointer;
+              margin-bottom: 1rem;
             }
-            p,
             span {
-                margin-left: 20px;
+              margin-bottom: 2rem;
             }
-        }
-        .auth-user-actions {
+            .currency-input {
+              border: 1px solid $light-gray;
+              border-radius: 16px;
+              // min-width: 350px;
+              height: 52px;
+              padding: 0 1rem;
+              color: $black;
+            }
+            button {
+              height: 50px;
+              margin-top: 1.5rem;
+            }
+          }
+          &:hover .header-currency-dropdown {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            .notifications {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                cursor: pointer;
-                span {
-                    display: flex;
-                    align-items: center;
-                    margin-left: 0.5rem;
-                    i {
-                        width: 28px;
-                        height: 28px;
-                    }
-                }
-                .message-icon i {
-                    background: url("../images/icons/message.svg") no-repeat;
-                }
-                .notification-icon {
-                    padding-top: 0.4rem;
-                    i {
-                        background: url("../images/icons/notification.svg")
-                            no-repeat;
-                    }
-                }
-            }
-            .header-personal-info {
-                display: flex;
-                margin-left: 0.3rem;
-                .header-user-currency,
-                .header-user-profile {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    min-width: 48px;
-                    height: 48px;
-                    background-color: $light-purple;
-                    border-radius: 10px;
-                    margin-left: 0.4rem;
-                    cursor: pointer;
-                }
-                .header-user-currency {
-                    position: relative;
-                    span:last-child {
-                        margin-left: 0.1rem;
-                    }
-                    .header-currency-dropdown {
-                        display: none;
-                        flex-direction: column;
-                        position: absolute;
-                        z-index: 999;
-                        top: 4rem;
-                        right: 0;
-                        width: 320px;
-                        height: 280px;
-                        border-radius: 24px;
-                        padding: 1.5rem;
-                        background: linear-gradient(
-                            109.46deg,
-                            rgba(255, 255, 255, 0.77) 1.57%,
-                            rgba(255, 255, 255, 0.8) 100%
-                        );
-                        box-shadow: 111px 125px 67px rgba(0, 0, 0, 0.01),
-                            63px 70px 57px rgba(0, 0, 0, 0.05),
-                            28px 31px 42px rgba(0, 0, 0, 0.09),
-                            7px 8px 23px rgba(0, 0, 0, 0.1),
-                            0px 0px 0px rgba(0, 0, 0, 0.1),
-                            0px 12px 16px rgba(33, 33, 33, 0.04);
-                        p {
-                            margin-bottom: 1rem;
-                        }
-                        span {
-                            margin-bottom: 2rem;
-                        }
-                        .currency-input {
-                            border: 1px solid $light-gray;
-                            border-radius: 16px;
-                            // min-width: 350px;
-                            height: 52px;
-                            padding: 0 1rem;
-                            color: $black;
-                        }
-                        button {
-                            height: 50px;
-                            margin-top: 1.5rem;
-                        }
-                    }
-                    &:hover .header-currency-dropdown {
-                        display: flex;
-                    }
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        width: 50px;
-                        height: 40px;
-                        top: 30px;
-                        z-index: 0;
-                    }
-                }
-                .header-user-profile {
-                    position: relative;
-                    span {
-                        i {
-                            display: block;
-                            width: 24px;
-                            height: 24px;
-                            background: url("../images/icons/union.svg")
-                                no-repeat;
-                            background-position-x: center;
-                        }
-                    }
-                    .profile-dropdown {
-                        display: none;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        position: absolute;
-                        z-index: 999;
-                        width: 173px;
-                        height: 182px;
-                        top: 3rem;
-                        right: 0rem;
-                        background: linear-gradient(
-                            109.46deg,
-                            rgba(255, 255, 255, 0.77) 1.57%,
-                            rgba(255, 255, 255, 0.8) 100%
-                        );
-                        box-shadow: 111px 125px 67px rgba(0, 0, 0, 0.01),
-                            63px 70px 57px rgba(0, 0, 0, 0.05),
-                            28px 31px 42px rgba(0, 0, 0, 0.09),
-                            7px 8px 23px rgba(0, 0, 0, 0.1),
-                            0px 0px 0px rgba(0, 0, 0, 0.1);
-                        backdrop-filter: blur(18.4988px);
-                        border-radius: 0px 0px 12px 12px;
-                        padding: 1rem 2rem;
-                        span {
-                            a {
-                                text-decoration: none;
-                                text-align: left;
-                            }
-                            margin-top: 1rem;
-                        }
-                        .settings,
-                        .exit {
-                            display: flex;
-                            justify-content: space-between;
-                            i {
-                                width: 22px;
-                                height: 22px;
-                            }
-                            a {
-                                margin-left: 0.5rem;
-                            }
-                        }
-                        .settings i {
-                            background: url("../images/icons/settings.svg");
-                        }
-                        .exit i {
-                            background: url("../images/icons/exit.svg");
-                        }
-                    }
-                    &:hover .profile-dropdown {
-                        display: flex;
-                    }
-                }
-            }
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 40px;
+            top: 30px;
+            z-index: 0;
+          }
         }
+        .header-user-profile {
+          position: relative;
+          span {
+            i {
+              display: block;
+              width: 24px;
+              height: 24px;
+              background: url("../images/icons/union.svg") no-repeat;
+              background-position-x: center;
+            }
+          }
+          .profile-dropdown {
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            z-index: 999;
+            width: 173px;
+            height: 182px;
+            top: 3rem;
+            right: 0rem;
+            background: linear-gradient(
+              109.46deg,
+              rgba(255, 255, 255, 0.77) 1.57%,
+              rgba(255, 255, 255, 0.8) 100%
+            );
+            box-shadow: 111px 125px 67px rgba(0, 0, 0, 0.01),
+              63px 70px 57px rgba(0, 0, 0, 0.05),
+              28px 31px 42px rgba(0, 0, 0, 0.09),
+              7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(18.4988px);
+            border-radius: 0px 0px 12px 12px;
+            padding: 1rem 2rem;
+            span {
+              a {
+                text-decoration: none;
+                text-align: left;
+              }
+              margin-top: 1rem;
+            }
+            .settings,
+            .exit {
+              display: flex;
+              justify-content: space-between;
+              i {
+                width: 22px;
+                height: 22px;
+              }
+              a {
+                margin-left: 0.5rem;
+              }
+            }
+            .settings i {
+              background: url("../images/icons/settings.svg");
+            }
+            .exit i {
+              background: url("../images/icons/exit.svg");
+            }
+          }
+          &:hover .profile-dropdown {
+            display: flex;
+          }
+        }
+      }
     }
+  }
+}
+
+.notification-icon {
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+  i {
+    width: 28px;
+    height: 28px;
+  }
+  i {
+    background: url("../images/icons/notification.svg") no-repeat;
+  }
+}
+.message-icon {
+  display: flex;
+  align-items: center;
+  i {
+    width: 28px;
+    height: 28px;
+  }
+  i {
+    background: url("../images/icons/message.svg") no-repeat;
+  }
+}
+
+.hm-icons-wrapper {
+  display: flex;
+  align-items: center;
+
+  :last-child {
+    margin-left: 10px;
+  }
 }
