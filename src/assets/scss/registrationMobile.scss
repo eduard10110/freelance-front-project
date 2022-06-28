@@ -1,0 +1,178 @@
+.mobile-reg-modal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .reg-title {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 0;
+            top: -0.5rem;
+            width: 40px;
+            height: 40px;
+            padding: 8px;
+            cursor: pointer;
+            border: 1px solid rgb(247, 247, 247);
+            background: linear-gradient(
+                135deg,
+                rgba(255, 255, 255, 0.04) 0%,
+                rgba(255, 255, 255, 0.17) 100%
+            );
+            border-radius: 10px;
+            i {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background: url("../images/icons/close-icon.svg") no-repeat;
+            }
+        }
+    }
+    .reg-type {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        margin-top: 35px;
+        p {
+            margin-right: 11px;
+            cursor: pointer;
+            &:last-child {
+                color: $dark-purple;
+            }
+        }
+    }
+    .reg-inputs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-top: 20px;
+        label {
+            // &:last-child {
+                margin-top: 24px;
+            // }
+        }
+        input {
+            margin-top: 12px;
+            width: 100%;
+            height: 52px;
+        }
+    }
+    .reg-terms {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 24px;
+        p {
+            margin-left: 2.1rem;
+        }
+    }
+    .reg-actions {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 35px;
+        width: 100%;
+        .btn-reg {
+            border-color: $dark-purple;
+            color: $dark-purple;
+            width: 212px;
+            height: 42px;
+            padding: 10px 8px;
+            font-size: 10px;
+        }
+        .btn-reg-google {
+            display: flex;
+            width: 364px;
+            height: 42px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #808083;
+            padding: 10px 12px;
+            color: #dddce0;
+            border: none;
+            font-size: 10px;
+            i {
+                display: flex;
+                margin-right: 10px;
+                width: 16px;
+                height: 16px;
+                background: url("../images/icons/google-icon.svg");
+            }
+        }
+    }
+}
+
+
+
+// CUSTOM CHECKBOX
+
+.login-checkbox-container {
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .login-checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .login-checkmark {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border: 1px solid $black;
+    border-radius: 6px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .login-checkbox-container:hover input ~ .login-checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .login-checkbox-container input:checked ~ .login-checkmark {
+    background-color: $black;
+    border-radius: 6px;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .login-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .login-checkbox-container input:checked ~ .login-checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .login-checkbox-container .login-checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

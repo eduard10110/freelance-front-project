@@ -15,6 +15,8 @@ import { isMobile } from "react-device-detect";
 import HeaderMobile from "containers/headerMobile";
 import FooterMobile from "containers/mobile/footer";
 import MobileChat from "containers/mobileChat";
+import LoginMobile from "components/loginMobile";
+import RegistrationMobile from "components/registrstionMobile";
 
 export default function App() {
   const loginModalVisible = useSelector(showLoginModalSelector, shallowEqual);
@@ -28,8 +30,8 @@ export default function App() {
     <div>
       {isMobile ? <HeaderMobile /> : <Header />}
       <RouteBuilder />
-      {loginModalVisible && <Login />}
-      {registrationModalVisible && <Registration />}
+      {loginModalVisible && (isMobile ? <LoginMobile/> : <Login />)}
+      {registrationModalVisible && (isMobile ? <RegistrationMobile/> : <Registration />)}
       {chatModal && (isMobile ? <MobileChat/> : <Chat />)}
       {isMobile ? <FooterMobile /> : <Footer />}
     </div>
