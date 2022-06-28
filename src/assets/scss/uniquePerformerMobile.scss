@@ -1,0 +1,38 @@
+.upm-wrapper {
+  padding: 30px 0;
+}
+
+.upm-personal-info-wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.upm-picture-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 130px;
+  }
+
+  button {
+    width: 130px;
+    margin-top: 20px;
+  }
+}
+
+.upm-seen-history {
+  margin-top: 10px;
+}
+
+.upm-about-container-wrapper {
+  margin: 20px 0;
+}
+
+.upm-slider-wrapper {
+  min-height: 430px;
+  .slick-arrow {
+    display: none !important;
+  }
+}

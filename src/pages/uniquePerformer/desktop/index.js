@@ -27,10 +27,6 @@ export default function UniquePerformerDesktop() {
       padding: "none",
       position: "relative",
       className: "slider_popup",
-      // borderRadius: "16px",
-      // background: "transparent",
-      // boxShadow:
-      //     "111px 125px 67px rgba(0, 0, 0, 0.01), 63px 70px 57px rgba(0, 0, 0, 0.05), 28px 31px 42px rgba(0, 0, 0, 0.09), 7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)",
     },
   };
   return (

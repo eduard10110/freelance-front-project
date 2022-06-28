@@ -1,5 +1,6 @@
 import logo from "assets/images/logo.png";
 import HeaderMobileMenu from "components/headerMobileMenu";
+import Notifications from "containers/notifications";
 import React, { useState } from "react";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
@@ -24,41 +25,44 @@ export default function HeaderMobile() {
   };
 
   return (
-    <div className="header-mobile">
-      <div className="hamburger-menu">
-        <input
-          checked={menuOpened}
-          onClick={handleCheckboxChange}
-          id="menu__toggle"
-          type="checkbox"
-        />
-        <label className="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
-        <HeaderMobileMenu handleCheckboxChange={handleCheckboxChange} />
-      </div>
-
-      <Link to="/">
-        <img src={logo} alt="logo" />
-      </Link>
-      {auth && (
-        <div className="hm-icons-wrapper">
-          <span
-            className="message-icon"
-            onClick={handleChatModalVisible}
-            role="presentation"
-          >
-            <i></i>
-          </span>
-          <span
-            onClick={handleOpenNotificationsModal}
-            role="button"
-            className="notification-icon"
-          >
-            <i></i>
-          </span>
+    <>
+      <Notifications />
+      <div className="header-mobile">
+        <div className="hamburger-menu">
+          <input
+            checked={menuOpened}
+            onClick={handleCheckboxChange}
+            id="menu__toggle"
+            type="checkbox"
+          />
+          <label className="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <HeaderMobileMenu handleCheckboxChange={handleCheckboxChange} />
         </div>
-      )}
-    </div>
+
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
+        {auth && (
+          <div className="hm-icons-wrapper">
+            <span
+              className="message-icon"
+              onClick={handleChatModalVisible}
+              role="presentation"
+            >
+              <i></i>
+            </span>
+            <span
+              onClick={handleOpenNotificationsModal}
+              role="button"
+              className="notification-icon"
+            >
+              <i></i>
+            </span>
+          </div>
+        )}
+      </div>
+    </>
   );
 }

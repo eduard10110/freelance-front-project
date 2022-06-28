@@ -13,6 +13,8 @@ export default function SupportMobile() {
     setData({ ...data, [id]: payload || e.target.value });
   };
 
+  console.log(successModalVisible);
+
   const checkDisabled = () => {
     return (
       !!data.name &&
@@ -24,7 +26,7 @@ export default function SupportMobile() {
 
   const handleOpenModal = () => setSuccessModalVisible(true);
 
-  const handleCloseModal = () => setSuccessModalVisible(false);
+  // const handleCloseModal = () => setSuccessModalVisible(false);
 
   const handleSubmit = () => {
     if (checkDisabled()) {

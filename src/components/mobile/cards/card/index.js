@@ -20,6 +20,8 @@ export default function CardMobile({ data, onClickToCard }) {
     id,
   } = data;
 
+  console.log(modalData);
+
   const handleClickToTask = (e) => {
     e.stopPropagation();
     setModalData({ isOpen: true, data });
@@ -33,7 +35,7 @@ export default function CardMobile({ data, onClickToCard }) {
     return navigate(`/find-task/${id}`);
   };
 
-  const handleClose = () => setModalData({ isOpen: false, data: null });
+  // const handleClose = () => setModalData({ isOpen: false, data: null });
 
   return (
     <div onClick={handleClickToCard} className="ftm-card-wrapper">
