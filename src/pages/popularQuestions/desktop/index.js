@@ -56,7 +56,7 @@ export default function PopularQuestionsDesktop() {
                     />
                   )}
                 </div>
-                {<p className="body3">{answer}</p>}
+                <p className="body3">{answer}</p>
               </div>
             ))}
           </div>
