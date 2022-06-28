@@ -150,7 +150,8 @@
     border-top: 1px solid #DDDDDD;
     width: 100%;
     padding: 20px;
-    .chat-message-content {
+    .mobile-chat-message-content {
+        position: relative;
         margin-top: 20px;
         width: 100%;
     }
@@ -162,15 +163,21 @@
     border-bottom: 1px solid #DDDDDD;
 }
 
-.chat-message-head {
+.mobile-chat-message-head {
     height: 274px;
     // padding: 25px 0 33px 29px;
 }
 
-.chat-person {
+.mobile-chat-person {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 13px;
+    position: sticky;
+    div {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+    }
 }
 
 .person-response {
