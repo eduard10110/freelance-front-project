@@ -84,8 +84,6 @@ export default function UniquePerformer() {
             </div>
             <MyProfileCommentCardMobile />
             <MyProfileCommentCardMobile />
-            {/* <MyProfileCommentCard />
-            <MyProfileCommentCard /> */}
           </div>
         </div>
       </div>
