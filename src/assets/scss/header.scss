@@ -232,3 +232,51 @@
     margin-left: 10px;
   }
 }
+
+.header-mobile-currency-dropdown {
+  flex-direction: column;
+  position: absolute;
+  z-index: 999;
+  top: 4rem;
+  right: 0;
+  width: 320px;
+  height: 280px;
+  border-radius: 24px;
+  padding: 1.2rem 1.5rem 1.5rem 0;
+  background: linear-gradient(
+    109.46deg,
+    rgba(255, 255, 255, 0.77) 1.57%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  // box-shadow: 111px 125px 67px rgba(0, 0, 0, 0.01),
+  //   63px 70px 57px rgba(0, 0, 0, 0.05), 28px 31px 42px rgba(0, 0, 0, 0.09),
+  //   7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1),
+  //   0px 12px 16px rgba(33, 33, 33, 0.04);
+  p {
+    margin-bottom: 1rem;
+  }
+  span {
+    margin-bottom: 2rem;
+  }
+  .currency-input {
+    border: 1px solid $light-gray;
+    border-radius: 16px;
+    // min-width: 350px;
+    height: 40px;
+    margin-top: 15px;
+    padding: 0 1rem;
+    color: $black;
+  }
+  button {
+    display: block;
+    width: 150px;
+    height: 50px;
+    margin-top: 1.5rem;
+  }
+}
+
+.hm-currency-dropdown {
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
