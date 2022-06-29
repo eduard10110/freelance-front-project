@@ -12,7 +12,11 @@ const customStyles = {
 
 export default function BalanceModal({ visible, handleClose }) {
   return (
-    <ModalComponent customStyles={customStyles} isOpen={visible}>
+    <ModalComponent
+      onRequestClose={handleClose}
+      customStyles={customStyles}
+      isOpen={visible}
+    >
       <div className="header-mobile-currency-dropdown hm-currency-dropdown">
         <p className="body3">На какую сумму хотите пополнить кошелёк?</p>
         <span className="body">
