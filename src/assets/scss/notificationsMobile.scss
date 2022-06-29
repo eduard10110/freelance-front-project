@@ -1,0 +1,32 @@
+.mobile-notifications-modal-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  img {
+    cursor: pointer;
+  }
+
+  .notifications-item-wrapper {
+    height: 45px;
+    margin-top: 34px;
+    :first-child {
+      margin-top: 0;
+    }
+  
+    div {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+    }
+  }
+  
+  .notifications-modal {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+

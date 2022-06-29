@@ -1,6 +1,6 @@
 import logo from "assets/images/logo.png";
 import HeaderMobileMenu from "components/headerMobileMenu";
-import Notifications from "containers/notifications";
+import NotificationsMobile from "components/mobile/notificationsMobile";
 import React, { useState } from "react";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
@@ -26,7 +26,7 @@ export default function HeaderMobile() {
 
   return (
     <>
-      <Notifications />
+      <NotificationsMobile />
       <div className="header-mobile">
         <div className="hamburger-menu">
           <input
