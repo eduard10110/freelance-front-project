@@ -1,0 +1,58 @@
+.mobile-mp-comments-navbar-wrapper {
+  margin: 24px 0;
+  display: flex;
+
+  p {
+    margin-right: 24px;
+  }
+}
+
+.mp-comment-card-wrapper {
+  margin-top: 10px;
+  height: 252px;
+  width: 944px;
+  border-radius: 12px;
+  background: linear-gradient(109.46deg, #f0ecff 1.57%, #ffffff 100%);
+  box-shadow: 7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border: none;
+  position: relative;
+}
+
+.mp-comment-card-wrapper-inner {
+  padding: 31px 67px 32px 48px;
+}
+
+.mp-task-description {
+  margin-top: 26px;
+  margin-bottom: 12px;
+}
+
+.mp-user-profile {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+
+  p {
+    margin-left: 20px;
+  }
+}
+
+.mycm-wrapper {
+  margin-top: 10px;
+  min-height: 252px;
+  width: 100%;
+  border-radius: 12px;
+  background: linear-gradient(109.46deg, #f0ecff 1.57%, #ffffff 100%);
+  box-shadow: 7px 8px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border: none;
+  position: relative;
+}
+
+.mycm-personalImage {
+  width: 40px;
+  height: 40px;
+}
+
+.mycm-comment-card-wrapper-inner {
+  padding: 20px;
+}

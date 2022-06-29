@@ -7,7 +7,7 @@ import React from "react";
 
 export default function MyProfilePersonalInfoMobile() {
   return (
-    <div className="my-profile-personal-info-wrapper">
+    <div className="my-profile-personal-info-wrapper-mobile">
       <div className="my-profile-personal-picture-wrapper">
         <img src={personalPicture} alt="profilePicture" />
         <button className="btn btn-purple-filled body3">Изменить фото</button>

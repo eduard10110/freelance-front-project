@@ -1,0 +1,153 @@
+.mobile-my-profile-container-wrapper {
+  width: 100%;
+  padding: 15px;
+
+
+  .my-profile-personal-info-wrapper-mobile {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    div {
+      margin-top: 30px;
+    }
+  }
+  
+  .my-profile-personal-picture-wrapper {
+    display: flex;
+    flex-direction: column;
+    button {
+      margin-top: 24px;
+    }
+  }
+  
+  .my-profile-name-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  
+  .mp-edit-button {
+    margin-left: 12px;
+    color: rgba(109, 109, 109, 1);
+  }
+  
+  .my-profile-user-rating-container-wrapper {
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 12px;
+  
+    img {
+      width: 16px;
+      margin-left: 5px;
+      margin-right: 8px;
+    }
+  }
+  
+  .mp-contacts-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 23px;
+  }
+  
+  .mp-phone-mail-container-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+  
+    p {
+      margin-left: 14px;
+    }
+  }
+  
+  .mp-seen-history {
+    display: flex;
+    align-items: center;
+    height: 30px;
+  }
+  
+  .mp-about-container-wrapper {
+    display: flex;
+    margin-top: 48px;
+    margin-bottom: 32px;
+  }
+  
+  .mp-work-examples {
+    display: flex;
+    margin-bottom: 48px;
+  
+    img {
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+    }
+  
+    :last-child {
+      margin: 0;
+    }
+  }
+  
+  .mp-upload-work-example {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: radial-gradient(
+      82.46% 82.46% at 50% 42.89%,
+      rgba(187, 170, 255, 0.65) 0%,
+      rgba(114, 79, 255, 0.65) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .work-example-category-item {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .work-example-subcategory-lasItem {
+    margin-top: 12px;
+    margin-bottom: 48px;
+  }
+  
+  .star-rating-container-wrapper-mobile {
+    width: 100%;
+    height: 60px;
+    background-color: #b2aae9;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 48px;
+    padding: 5px;
+    gap: 15px;
+  }
+  
+  .mp-stars-wrapper-mobile {
+    // margin-left: 42px;
+    img {
+      width: 15px;
+      margin-right: 11px;
+    }
+  
+    :last-child {
+      margin: 0;
+    }
+  }
+  
+  .green-hurt-1 {
+    position: absolute;
+    bottom: 10%;
+  }
+  
+  .green-hurt-2 {
+    position: absolute;
+    right: 0%;
+    bottom: 25%;
+  }
+
+}
+
+
