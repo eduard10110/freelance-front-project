@@ -1,0 +1,107 @@
+.mobile-click-on-task-modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 4rem;
+  .close-button {
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+  }
+  
+  .modal-task-reviews-wrapper-moble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      border-right: 2px solid black;
+      border-left: 2px solid black;
+      padding: 0 10px;
+    }
+  
+    :first-child,
+    :last-child {
+      border: none;
+    }
+  }
+  
+  .modal-task-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 41px;
+    .modal-userInfo-wrapper {
+      display: flex;
+      gap: 15px;
+    }
+  }
+  
+  .modal-orderer-picture {
+    width: 178px;
+    height: 178px;
+  }
+  
+  .modal-task-info-wrapper-inner-mobile {
+    margin-top: 4rem;
+    .modal-task-description {
+      width: 100%;
+    }
+  
+    p {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .modal-task-orderer-name {
+    margin-top: 25px;
+    margin-bottom: 12px;
+  }
+  
+ 
+  
+  .comment-input-wrapper {
+    margin-top: 26px;
+  }
+  
+  .modal-task-comment-input {
+    width: 100%;
+    height: 50px;
+  }
+  
+  .budget-input-wrapper {
+    margin-top: 46px;
+  }
+  
+  .modal-budget-info {
+    width: 100%;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $black;
+  }
+
+  .conclusion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+    .total-cost-wrapper {
+      width: 475px;
+      display: flex;
+      justify-content: space-between;
+      height: 25px;
+    }
+    
+    .total-cost-description {
+      margin-top: 7px;
+      margin-bottom: 46px;
+    }
+    
+    .modal-task-click-button {
+      width: 171px;
+      height: 50px;
+    }
+  }
+  
+  
+  
+}
+
