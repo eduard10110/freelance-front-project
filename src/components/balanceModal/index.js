@@ -13,7 +13,7 @@ const customStyles = {
 export default function BalanceModal({ visible, handleClose }) {
   return (
     <ModalComponent
-      onRequestClose={handleClose}
+      onRequestClose={handleClose(false)}
       customStyles={customStyles}
       isOpen={visible}
     >
