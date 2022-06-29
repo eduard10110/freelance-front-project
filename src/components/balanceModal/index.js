@@ -3,10 +3,12 @@ import React from "react";
 
 const customStyles = {
   content: {
-    width: "320px",
-    height: "280px",
+    width: "100%",
+    height: "300px",
     position: "relative",
     top: "20%",
+    left: 0,
+    padding: 0,
   },
 };
 
